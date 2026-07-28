@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brand Style Guide | Angelo Mendoza Works</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#d3c4b5",
+                        "on-tertiary-container": "#564c40",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#30d5c8",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "outline": "#6b7a78",
+                        "error": "#ba1a1a",
+                        "tertiary": "#685d50",
+                        "primary-fixed-dim": "#3cdccf",
+                        "outline-variant": "#bacac7",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#9fc2fe",
+                        "on-surface-variant": "#3c4947",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary": "#3a5f94",
+                        "surface-variant": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "on-secondary-fixed": "#001b3c",
+                        "on-secondary-container": "#294f83",
+                        "surface-bright": "#fcf9f8",
+                        "secondary-fixed": "#d5e3ff",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-container": "#005852",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container": "#f0eded",
+                        "inverse-primary": "#3cdccf",
+                        "surface": "#fcf9f8",
+                        "on-background": "#1c1b1b",
+                        "on-primary-fixed-variant": "#00504a",
+                        "on-primary-fixed": "#00201d",
+                        "on-tertiary-fixed": "#221a11",
+                        "on-surface": "#1c1b1b",
+                        "surface-tint": "#006a63",
+                        "primary": "#006a63",
+                        "primary-fixed": "#62f9eb",
+                        "tertiary-fixed": "#f0e0d0",
+                        "on-error-container": "#93000a",
+                        "background": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#4f453a",
+                        "inverse-surface": "#313030",
+                        "tertiary-container": "#ccbdae",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .brand-shadow {
+            box-shadow: 0 20px 20px rgba(0, 51, 102, 0.05);
+        }
+        .type-specimen-line {
+            border-bottom: 1px solid rgba(107, 122, 120, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 glass-nav shadow-[0_20px_20px_rgba(0,51,102,0.05)]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Portfolio</a>
+<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">About</a>
+<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-bold text-label-bold hover:scale-105 transition-transform duration-200">Let's Talk</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-secondary">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Section 1: Brand Overview -->
+<header class="mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-end">
+<div>
+<span class="text-primary font-label-bold text-label-bold tracking-widest uppercase mb-stack-sm block">Identity Guide v1.0</span>
+<h1 class="font-headline-xl text-headline-xl text-secondary mb-stack-md">Angelo Mendoza Works</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            Four years of digital marketing excellence, delivering enterprise-grade precision and sustainable growth through data-driven creativity.
+                        </p>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<div class="bg-surface-container-low px-6 py-4 rounded-xl border border-outline-variant/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">language</span>
+<span class="font-label-bold text-label-bold text-secondary">angelomendozaworks.com</span>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Section 3: Color Palette -->
+<section class="mb-section-gap">
+<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
+<span class="w-8 h-1 bg-primary-container rounded-full"></span>
+                    Azure Horizon Palette
+                </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-stack-md">
+<!-- Primary Turquoise -->
+<div class="group">
+<div class="h-48 w-full bg-primary-container rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
+<p class="font-label-bold text-label-bold text-secondary">Turquoise</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">#30D5C8</p>
+</div>
+<!-- Secondary Navy -->
+<div class="group">
+<div class="h-48 w-full bg-secondary rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
+<p class="font-label-bold text-label-bold text-secondary">Deep Navy</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">#3A5F94</p>
+</div>
+<!-- Surface Warm Sand -->
+<div class="group">
+<div class="h-48 w-full bg-tertiary-fixed rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
+<p class="font-label-bold text-label-bold text-secondary">Warm Sand</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">#F0E0D0</p>
+</div>
+<!-- Tertiary Deep -->
+<div class="group">
+<div class="h-48 w-full bg-tertiary rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
+<p class="font-label-bold text-label-bold text-secondary">Muted Earth</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">#685D50</p>
+</div>
+<!-- On Surface -->
+<div class="group">
+<div class="h-48 w-full bg-on-surface rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
+<p class="font-label-bold text-label-bold text-secondary">Onyx</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">#1C1B1B</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Typography -->
+<section class="mb-section-gap">
+<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
+<span class="w-8 h-1 bg-primary-container rounded-full"></span>
+                    Typography Hierarchy
+                </h2>
+<div class="bg-surface-container-lowest rounded-xl p-stack-lg brand-shadow border border-outline-variant/10">
+<div class="space-y-stack-lg">
+<div class="type-specimen-line pb-stack-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Headline XL / Montserrat Bold</span>
+<h3 class="font-headline-xl text-headline-xl text-secondary">Master Your Growth</h3>
+</div>
+<div class="type-specimen-line pb-stack-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Headline MD / Montserrat Semi-Bold</span>
+<h4 class="font-headline-md text-headline-md text-secondary">Enterprise Marketing Strategy</h4>
+</div>
+<div class="type-specimen-line pb-stack-md">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Body Large / Inter Regular</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We bridge the gap between creative inspiration and analytical rigor to deliver results that last.</p>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Body Medium & Label / Inter</span>
+<div class="flex flex-wrap gap-stack-lg">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Standard body text used for descriptions and long-form content to ensure maximum readability.</p>
+<span class="font-label-bold text-label-bold text-secondary px-4 py-2 bg-secondary-fixed rounded-full">Primary Action Label</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Imagery & Tone -->
+<section class="mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div>
+<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
+<span class="w-8 h-1 bg-primary-container rounded-full"></span>
+                            Imagery & Tone
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                            Our visual language is inspired by the Mediterranean coast: airy, professional, and optimistic. We prioritize high-resolution photography with natural lighting and minimalist compositions.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-bold text-label-bold text-secondary">Natural High-Key Lighting</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-bold text-label-bold text-secondary">Minimalist Architecture</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-label-bold text-label-bold text-secondary">Coastal Professionalism</span>
+</li>
+</ul>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/10 rounded-2xl -rotate-2"></div>
+<img alt="Hero Reference Image" class="relative z-10 w-full rounded-xl brand-shadow object-cover aspect-[1.06]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZCpX4ApY3TcWT5oR4S_mxOb_QBAvY3fCMDJSQdPvml4KPF-1d_ui6y5STiLGvff1Eurk-5iiVlVLBIUdNLlvd3tS0IatAPFsRGPL-CkPyct2mjyBm9SibXIButHI0xGXTcPqeFf12Ss7HF119JQG12GNUHK9VxFEbHafbuy0qkjV1KKdDNZaI-Ly3e7buRma6T0ICbUN4LTUGsB462FnfJAoQdzoVkI0s9Oaf2ngu5HJRnR0jtQ-S05FAMZd8L5gKdRpP1EMLtbYx"/>
+<div class="absolute bottom-8 left-8 z-20 bg-white/90 backdrop-blur-md p-4 rounded-lg shadow-xl">
+<p class="font-label-bold text-label-bold text-primary">Visual Benchmark</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">IMG_5537 Reference Style</p>
+</div>
+</div>
+</div>
+</section>
+  <!-- Portfolio Preview (Bento Grid Style) -->
+<section class="py-section-gap" id="portfolio">
+<div class=" mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-stack-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Selected Works</h2>
+<p class="font-body-md text-on-surface-variant max-w-lg">Transforming businesses through integrated digital ecosystems and relentless optimization.</p>
+</div>
+<button class="px-6 py-3 border-b-2 border-primary text-primary font-label-bold hover:bg-primary/5 transition-all">View All Projects</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[700px]">
+<div class="md:col-span-8 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute top-6 left-6 z-20 flex gap-2">
+<span class="px-4 py-1.5 bg-primary-container text-on-primary-container text-label-sm font-label-bold rounded-full">E-COMMERCE</span>
+</div>
+<div class="absolute bottom-10 left-10 z-20 text-white">
+<h4 class="font-headline-md text-headline-md mb-2">The Coastal Collection</h4>
+<p class="font-body-md opacity-90 max-w-sm">Scaling a Mediterranean lifestyle brand from $0 to $1.2M annual revenue through paid social and SEO.</p>
+</div>
+<div class="w-full h-full" data-alt="A luxurious minimalist workspace overlooking a crystal clear turquoise coastline. High-end modern furniture and sleek digital displays showing growth metrics. The lighting is bright, natural, and emphasizes a premium, Mediterranean digital marketing aesthetic with vibrant blues and warm sand tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeEy97_IT6A7deaec3Yd9tTd5YO4SHnazQKnINfzQm7QZlQWvSx3QuNNRgy3i58PaaYCRkQcLWVmesKKD3Y_B-qIErEgEYc83S2vZfqoa7wcnIrOJANqB11QDWwslSySk73B0YSpTyxRPwm9PNdWdsPbOVdKNV9wbxPxbV4GW2g9tOtPWVhVbNNtraPmU1B772cthXQhUfpxP_3KMCKkaCQ4ZLtwk5DCHM7fdUckCTRy9udLZ4IbTUWB-oXrulxgBiLUhLBsr0mczw')"></div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="h-1/2 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60"></div>
+<div class="absolute bottom-6 left-6 z-20 text-white">
+<h4 class="font-body-lg font-bold">TechSaaS AI</h4>
+<span class="text-label-sm text-primary-fixed uppercase tracking-widest">SaaS Growth</span>
+</div>
+<div class="w-full h-full" data-alt="A clean, minimalist 3D abstract visualization of data growth and connectivity. Soft turquoise and deep blue gradients represent high-tech innovation. Bright, professional lighting with plenty of whitespace, reflecting a high-end corporate modern digital marketing brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWTLDgq8M-npTtKVUIjtQgVhwOs2t1-9lBQ28dpxBYwdIyoWZ8Cmqc9NTrnB3K59NkPr0-gIf_nn6L8LOdL4_kIWZbSPEf4nU7D03H7y3Jxz4RPD17v1zB3jqoR_kvrRfnui7UeMucsMXaAsQI_luzFkIr5dLZLqnqYB5Sx7nIDukGV3dK9A4HhY0g2t_Y75h4RgHqDuWFOlLWfSz-ZkmCTN5uFGY4p2wH2Mbfn46znqti2dy3kdofi8K4YHiq5-xgI3SkWIQ6L1fF')"></div>
+</div>
+<div class="h-1/2 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60"></div>
+<div class="absolute bottom-6 left-6 z-20 text-white">
+<h4 class="font-body-lg font-bold">Urban Wellness</h4>
+<span class="text-label-sm text-primary-fixed uppercase tracking-widest">Local SEO</span>
+</div>
+<div class="w-full h-full" data-alt="An aesthetically pleasing, wellness-focused office space with natural materials like warm wood and light stone. A person is looking at a tablet displaying a clean, branded social media feed. The overall mood is peaceful, bright, and organized, consistent with the Mediterranean-inspired digital marketing style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBq8PaED3S294BF25bY1L19w6bRtjEx8gxzEx2EklMl69oSS9hSwA_LuE3HRkUeOZFwTFfEfgUOb6X5AcBiSbdKYws9nzhstO8zl2waxCxqCigcrJVdKz4gXvMYM3tdO4KsDAGjNzU2NFKhvXfniuivKiBC-o4Fxf_P9yOKknQR3-KK-C7PSJThcUwDDO0IaOjxxdr7N1Q6cyCEZLg79L_GNrOxdYIDsXIGwuxYxoaaGzkkJ9vmJZYhsUi5g9q4rSQD_p6z0ReRmmkw')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Core Values -->
+<section>
+<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
+<span class="w-8 h-1 bg-primary-container rounded-full"></span>
+                    Core Values
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container rounded-xl p-8 hover:bg-primary-container group transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-4xl mb-4">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-primary-container mb-2">Strategic Growth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-primary-container/80">Scalable digital frameworks designed for long-term market dominance.</p>
+</div>
+<div class="bg-surface-container rounded-xl p-8 hover:bg-secondary group transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-secondary text-4xl mb-4">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-secondary mb-2">Enterprise Precision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-secondary/80">Every pixel and every data point curated with professional obsession.</p>
+</div>
+<div class="bg-surface-container rounded-xl p-8 hover:bg-tertiary group transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-tertiary text-4xl mb-4">eco</span>
+<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-tertiary mb-2">Sustainable Results</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-tertiary/80">Building brand equity that outlasts temporary marketing trends.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary-fixed py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<div class="md:col-span-1">
+
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant">© 2024 Results-driven digital strategy.</p>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-secondary mb-4">Platform</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Case Studies</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-secondary mb-4">Connect</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">LinkedIn</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-bold text-label-bold text-secondary mb-4">Legal</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Micro-interactions
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => el.classList.add('scale-95'));
+            el.addEventListener('mouseup', () => el.classList.remove('scale-95'));
+            el.addEventListener('mouseleave', () => el.classList.remove('scale-95'));
+        });
+    </script>
+</body></html>

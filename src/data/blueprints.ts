@@ -1,0 +1,47 @@
+export const BLUEPRINTS = [
+  {
+    industry: "Law",
+    icon: "gavel",
+    sections: [
+      "Navbar",
+      "Hero / Header",
+      "Reviews / Case Results",
+      "Trust Badges",
+      "Practice Areas",
+      "About Us",
+      "Call To Action",
+      "Footer",
+    ],
+    previewHeadline: "INJURY LAWYERS WHO FIGHT FOR YOU",
+  },
+  {
+    industry: "Roofing",
+    icon: "roofing",
+    sections: [
+      "Navbar",
+      "Hero / Header",
+      "Reviews / Project Gallery",
+      "Trust Badges",
+      "Services",
+      "About Us",
+      "Call To Action",
+      "Footer",
+    ],
+    previewHeadline: "ROOFING REPAIRS DONE RIGHT, GUARANTEED",
+  },
+  {
+    industry: "Painting",
+    icon: "format_paint",
+    sections: [
+      "Navbar",
+      "Hero / Header",
+      "Reviews / Before & After",
+      "Trust Badges",
+      "Services",
+      "About Us",
+      "Call To Action",
+      "Footer",
+    ],
+    previewHeadline: "PAINTING PROS TRUSTED BY YOUR NEIGHBORS",
+  },
+] as const;

@@ -5,6 +5,8 @@ import Portfolio from "@/components/Portfolio";
 import Philosophy from "@/components/Philosophy";
 import Services from "@/components/Services";
 import Proposition from "@/components/Proposition";
+import WebsiteShowcase from "@/components/WebsiteShowcase";
+import AdsShowcase from "@/components/AdsShowcase";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -16,6 +18,8 @@ export default function Home() {
         <Hero />
         <Services />
         <Proposition />
+        <WebsiteShowcase />
+        <AdsShowcase />
         <About />
         <Portfolio />
         <Philosophy />

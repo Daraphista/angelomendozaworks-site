@@ -1,33 +1,39 @@
 const SERVICES = [
   {
-    icon: "language",
-    title: "Websites",
+    icon: "code",
+    title: "Websites & Web Apps",
     description:
-      "Hard-coded for speed, security, and conversion. No bloated builders, no guesswork.",
+      "Custom-built, not templated. Fast, conversion-focused sites and web apps designed to work as hard as you do. No drag-and-drop shortcuts, no bloated page builders.",
   },
   {
-    icon: "search",
-    title: "SEO",
+    icon: "campaign",
+    title: "Paid Ads & Growth",
     description:
-      "No shortcuts or gimmicks. Straightforward strategy based on what's actually working for top competitors.",
+      "Google and Meta campaigns built on data, not guesswork. I manage spend like it's mine, tracking what actually drives revenue instead of vanity metrics.",
   },
   {
-    icon: "ads_click",
-    title: "Ad Strategy",
+    icon: "query_stats",
+    title: "SEO & Content Systems",
     description:
-      "Research-driven campaign strategy, built on real competitive data, not assumptions.",
+      "Organic growth engineered for the long game. Technical SEO, content strategy, and systems that compound instead of resetting every month.",
   },
   {
-    icon: "support_agent",
-    title: "Ongoing Support",
+    icon: "smart_toy",
+    title: "Automation & AI Systems",
     description:
-      "Direct access to me, not a support queue. Your business priority is my work priority.",
+      "Custom pipelines that do the work most agencies can't. Competitive intelligence, lead routing, and reporting automated end-to-end, built with the same tools shaping how businesses operate now.",
+  },
+  {
+    icon: "explore",
+    title: "Growth Strategy",
+    description:
+      "Diagnosing bottlenecks before prescribing solutions. I tell you what's actually broken, even if the fix isn't something I sell.",
   },
 ];
 
 function ServiceCard({ icon, title, description }: (typeof SERVICES)[number]) {
   return (
-    <div className="p-8 bg-white border border-outline-variant/40 rounded-xl hover:border-primary transition-colors space-y-4">
+    <div className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-8 bg-white border border-outline-variant/40 rounded-xl hover:border-primary transition-colors space-y-4">
       <span className="material-symbols-outlined text-primary text-5xl">
         {icon}
       </span>
@@ -49,7 +55,7 @@ export default function Services() {
           </h2>
           <div className="h-1.5 w-20 bg-primary mx-auto mt-4" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <div className="flex flex-wrap justify-center gap-gutter">
           {SERVICES.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}

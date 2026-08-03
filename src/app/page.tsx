@@ -14,11 +14,11 @@ export default function Home() {
       <Header />
       <main className="pt-20">
         <Hero />
+        <Services />
+        <Proposition />
         <About />
         <Portfolio />
         <Philosophy />
-        <Services />
-        <Proposition />
         <Contact />
       </main>
       <Footer />

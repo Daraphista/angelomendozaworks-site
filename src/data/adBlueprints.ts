@@ -1,0 +1,52 @@
+import type { BlueprintCard } from "@/data/blueprints";
+
+export const AD_BLUEPRINTS: BlueprintCard[] = [
+  {
+    heading: "Law Ad Blueprint!",
+    icon: "gavel",
+    cardTitle: "Law Ad Campaign Blueprint",
+    sections: [
+      "Audience Research",
+      "Hook / Scroll-Stopper",
+      "Ad Creative (Image/Video)",
+      "Ad Copy & CTA",
+      "Landing Page",
+      "Retargeting Funnel",
+      "Budget & Bidding Strategy",
+      "Performance Tracking",
+    ],
+    previewHeadline: "STOP LOSING CASES TO SLOW FOLLOW-UP",
+  },
+  {
+    heading: "Roofing Ad Blueprint!",
+    icon: "roofing",
+    cardTitle: "Roofing Ad Campaign Blueprint",
+    sections: [
+      "Audience Research",
+      "Hook / Scroll-Stopper",
+      "Ad Creative (Image/Video)",
+      "Ad Copy & CTA",
+      "Landing Page",
+      "Retargeting Funnel",
+      "Budget & Bidding Strategy",
+      "Performance Tracking",
+    ],
+    previewHeadline: "FILL YOUR CALENDAR THIS STORM SEASON",
+  },
+  {
+    heading: "Painting Ad Blueprint!",
+    icon: "format_paint",
+    cardTitle: "Painting Ad Campaign Blueprint",
+    sections: [
+      "Audience Research",
+      "Hook / Scroll-Stopper",
+      "Ad Creative (Image/Video)",
+      "Ad Copy & CTA",
+      "Landing Page",
+      "Retargeting Funnel",
+      "Budget & Bidding Strategy",
+      "Performance Tracking",
+    ],
+    previewHeadline: "BOOK MORE PAINTING JOBS ON AUTOPILOT",
+  },
+];

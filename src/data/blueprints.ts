@@ -1,7 +1,16 @@
-export const BLUEPRINTS = [
+export type BlueprintCard = {
+  heading: string;
+  icon: string;
+  cardTitle: string;
+  sections: string[];
+  previewHeadline: string;
+};
+
+export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
   {
-    industry: "Law",
+    heading: "Law Website Blueprint!",
     icon: "gavel",
+    cardTitle: "Law Website Design Blueprint",
     sections: [
       "Navbar",
       "Hero / Header",
@@ -15,8 +24,9 @@ export const BLUEPRINTS = [
     previewHeadline: "INJURY LAWYERS WHO FIGHT FOR YOU",
   },
   {
-    industry: "Roofing",
+    heading: "Roofing Website Blueprint!",
     icon: "roofing",
+    cardTitle: "Roofing Website Design Blueprint",
     sections: [
       "Navbar",
       "Hero / Header",
@@ -30,8 +40,9 @@ export const BLUEPRINTS = [
     previewHeadline: "ROOFING REPAIRS DONE RIGHT, GUARANTEED",
   },
   {
-    industry: "Painting",
+    heading: "Painting Website Blueprint!",
     icon: "format_paint",
+    cardTitle: "Painting Website Design Blueprint",
     sections: [
       "Navbar",
       "Hero / Header",
@@ -44,4 +55,4 @@ export const BLUEPRINTS = [
     ],
     previewHeadline: "PAINTING PROS TRUSTED BY YOUR NEIGHBORS",
   },
-] as const;
+];

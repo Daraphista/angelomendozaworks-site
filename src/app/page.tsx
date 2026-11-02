@@ -17,7 +17,7 @@ export default function Home() {
       <main className="pt-20">
         <Hero />
         <Services />
-        <Proposition />
+        {/* <Proposition /> */}
         <WebsiteShowcase />
         <AdsShowcase />
         <About />

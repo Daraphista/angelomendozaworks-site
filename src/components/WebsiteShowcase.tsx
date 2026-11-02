@@ -1,4 +1,5 @@
 import BlueprintShowcase from "@/components/BlueprintShowcase";
+import { WEBSITE_BLUEPRINTS } from "@/data/blueprints";
 import { WEBSITE_POINTS } from "@/data/propositionPoints";
 
 export default function WebsiteShowcase() {
@@ -6,7 +7,7 @@ export default function WebsiteShowcase() {
     <section className="py-section-gap bg-secondary text-white">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg md:gap-16 items-center">
-          <BlueprintShowcase />
+          <BlueprintShowcase cards={WEBSITE_BLUEPRINTS} variant="dark" />
           <div className="space-y-stack-lg">
             <h2 className="font-headline text-headline-lg text-primary flex items-center gap-4">
               <span className="material-symbols-outlined text-5xl">web</span>

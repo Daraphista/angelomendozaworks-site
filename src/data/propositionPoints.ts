@@ -5,19 +5,15 @@ export const WEBSITE_POINTS = [
   },
   {
     strong: "Website Security Guarantee:",
-    text: "Bulletproof code designed to withstand modern threats.",
+    text: "Hardcoded and hosted on a dedicated server. Sit back and rest assured that your website will be secure and available 24/7 without fear of any hacking whatsoever.",
   },
   {
     strong: "Better Designs:",
-    text: "Modern, conversion-focused UI that builds immediate trust.",
+    text: "Limitless, Flexible, and Optimized for conversions. There is nothing that I cannot design. Give us the content, and I'll bring it to life.",
   },
   {
     strong: "Perfect Performance Scores:",
-    text: "100/100 Lighthouse audits for technical excellence.",
-  },
-  {
-    strong: "Satisfaction Guarantee:",
-    text: "I don't stop until the project meets the performance benchmarks.",
+    text: "Zero bloat, zero waste, and built with purpose. All of my websites get perfect 98-100 speed scores when tested with Google's page speed tool.",
   },
   {
     strong: "Unmatched Support:",
@@ -25,7 +21,7 @@ export const WEBSITE_POINTS = [
   },
   {
     strong: "Better SEO:",
-    text: "Built-in structural advantages for organic ranking growth.",
+    text: "No gimmicks, no shortcuts, no nonsense. I break down SEO in simple terms, explain how it works, and show you exactly what I'll do to help your firm rank higher.",
   },
 ];
 

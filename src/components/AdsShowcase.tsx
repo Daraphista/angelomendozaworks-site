@@ -1,4 +1,5 @@
-import ImagePlaceholder from "@/components/ImagePlaceholder";
+import BlueprintShowcase from "@/components/BlueprintShowcase";
+import { AD_BLUEPRINTS } from "@/data/adBlueprints";
 import { AD_POINTS } from "@/data/propositionPoints";
 
 export default function AdsShowcase() {
@@ -7,9 +8,9 @@ export default function AdsShowcase() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg md:gap-16 items-center">
           <div className="order-2 lg:order-1">
-            <ImagePlaceholder label="Campaign Preview" />
+            <BlueprintShowcase cards={AD_BLUEPRINTS} variant="light" />
           </div>
-          <div className="order-1 lg:order-2 space-y-stack-lg">
+          <div className=" space-y-stack-lg">
             <h2 className="font-headline text-headline-lg text-secondary flex items-center gap-4">
               <span className="material-symbols-outlined text-5xl text-primary">
                 trending_up

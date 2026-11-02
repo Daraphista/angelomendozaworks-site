@@ -8,7 +8,8 @@ const LOGO_SRC =
 
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  // TODO: restore once the Portfolio section is re-enabled
+  // { href: "#portfolio", label: "Portfolio" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];

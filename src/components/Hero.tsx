@@ -25,12 +25,14 @@ export default function Hero() {
             guesswork.
           </p>
           <div className="flex flex-wrap gap-stack-md pt-4">
+            {/* TODO: restore once the Portfolio section is re-enabled
             <a
               className="bg-primary text-white px-8 py-4 rounded-lg font-label-bold text-label-bold shadow-lg shadow-primary/20 hover:-translate-y-0.5 transition-transform"
               href="#portfolio"
             >
               View My Work
             </a>
+            */}
             <a
               className="border-2 border-secondary text-secondary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-secondary/5 transition-colors"
               href="#contact"

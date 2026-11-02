@@ -34,12 +34,14 @@ export default function Footer() {
           >
             Services
           </a>
+          {/* TODO: restore once the Portfolio section is re-enabled
           <a
             className="opacity-70 hover:opacity-100 transition-opacity"
             href="#portfolio"
           >
             Portfolio
           </a>
+          */}
           <a
             className="opacity-70 hover:opacity-100 transition-opacity"
             href="#about"

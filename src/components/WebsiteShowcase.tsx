@@ -26,12 +26,14 @@ export default function WebsiteShowcase() {
                 </li>
               ))}
             </ul>
+            {/* TODO: restore once the Portfolio section is re-enabled
             <a
               className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-label-bold text-label-bold shadow-lg shadow-primary/20 hover:-translate-y-0.5 transition-transform"
               href="#portfolio"
             >
               See the Work
             </a>
+            */}
           </div>
         </div>
       </div>

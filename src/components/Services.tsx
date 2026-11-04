@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/components/Logo";
+import Wave from "@/components/Wave";
 
 const SERVICES = [
   {
@@ -198,16 +199,12 @@ export default function Services() {
   return (
     <section className="py-section-gap bg-surface-container" id="services">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div className="flex flex-col lg:flex-row lg:items-end gap-8 mb-16">
-          <h2 className="font-headline font-bold text-headline-lg md:text-headline-xl text-secondary max-w-[13ch]">
+        <div className="flex flex-col xl:flex-row xl:items-end gap-8 mb-16">
+          <h2 className="font-headline font-bold text-headline-lg md:text-headline-xl text-secondary xl:whitespace-nowrap">
             What I build for you
           </h2>
-          <div
-            aria-hidden
-            className="hidden lg:flex flex-1 items-center pb-6"
-          >
-            <span className="size-2.5 rotate-45 bg-secondary shrink-0" />
-            <span className="h-px flex-1 bg-gradient-to-r from-secondary to-secondary/0" />
+          <div className="hidden xl:flex flex-1 items-center pb-4">
+            <Wave className="h-4 w-full max-w-32 text-lagoon" />
           </div>
         </div>
 

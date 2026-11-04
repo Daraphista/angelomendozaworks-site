@@ -1,66 +1,286 @@
-import Wave from "@/components/Wave";
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import Logo from "@/components/Logo";
 
 const SERVICES = [
   {
-    icon: "code",
+    visual: "sites",
     title: "Websites & Web Apps",
     description:
       "Custom-built, not templated. Fast, conversion-focused sites and web apps designed to work as hard as you do. No drag-and-drop shortcuts, no bloated page builders.",
   },
   {
-    icon: "campaign",
+    visual: "ads",
     title: "Paid Ads & Growth",
     description:
       "Google and Meta campaigns built on data, not guesswork. I manage spend like it's mine, tracking what actually drives revenue instead of vanity metrics.",
   },
   {
-    icon: "query_stats",
+    visual: "seo",
     title: "SEO & Content Systems",
     description:
       "Organic growth engineered for the long game. Technical SEO, content strategy, and systems that compound instead of resetting every month.",
   },
   {
-    icon: "smart_toy",
+    visual: "automation",
     title: "Automation & AI Systems",
     description:
       "Custom pipelines that do the work most agencies can't. Competitive intelligence, lead routing, and reporting automated end-to-end, built with the same tools shaping how businesses operate now.",
   },
   {
-    icon: "explore",
+    visual: "strategy",
     title: "Growth Strategy",
     description:
       "Diagnosing bottlenecks before prescribing solutions. I tell you what's actually broken, even if the fix isn't something I sell.",
   },
-];
+] as const;
 
-function ServiceCard({ icon, title, description }: (typeof SERVICES)[number]) {
+type VisualKey = (typeof SERVICES)[number]["visual"];
+
+function SitesVisual() {
+  const shot = "rounded-lg shadow-lg shadow-ink/15 w-full h-auto";
   return (
-    <div className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-8 bg-white border border-outline-variant/40 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-lagoon transition-all space-y-4">
-      <span className="material-symbols-outlined text-cobalt text-5xl">
-        {icon}
-      </span>
-      <h3 className="font-headline text-2xl font-bold text-secondary">
-        {title}
-      </h3>
-      <p className="font-body-md text-on-surface-variant">{description}</p>
+    <div className="absolute inset-0 flex bg-cloud">
+      <div className="w-[52%] bg-white p-6 flex flex-col justify-center gap-4">
+        <p className="font-headline font-semibold text-xl text-secondary leading-tight">
+          Custom-built, not templated.
+        </p>
+        <Image
+          src="/portfolio/site-1.jpg"
+          alt=""
+          width={1100}
+          height={553}
+          sizes="(min-width: 1024px) 340px, 60vw"
+          className={shot}
+        />
+      </div>
+      <div className="flex-1 bg-surface-container/70 p-4 flex flex-col justify-center gap-4">
+        <Image
+          src="/portfolio/site-2.jpg"
+          alt=""
+          width={1100}
+          height={552}
+          sizes="(min-width: 1024px) 300px, 40vw"
+          className={shot}
+        />
+        <Image
+          src="/portfolio/site-3.jpg"
+          alt=""
+          width={1100}
+          height={552}
+          sizes="(min-width: 1024px) 300px, 40vw"
+          className={`${shot} translate-x-6`}
+        />
+      </div>
     </div>
   );
 }
 
+function AdsVisual() {
+  return (
+    <div className="absolute inset-0 bg-cobalt flex items-center justify-center p-8">
+      <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-xl shadow-ink/20 space-y-5">
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-cobalt text-3xl">
+            campaign
+          </span>
+          <div className="h-3 w-32 rounded-full bg-secondary/80" />
+        </div>
+        {[85, 62, 40].map((w) => (
+          <div key={w} className="h-2.5 rounded-full bg-secondary/10">
+            <div
+              className="h-full rounded-full bg-lagoon"
+              style={{ width: `${w}%` }}
+            />
+          </div>
+        ))}
+        <svg viewBox="0 0 200 60" className="w-full text-coral" fill="none">
+          <path
+            d="M0 50 L35 40 L70 44 L110 22 L150 28 L200 6"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function SeoVisual() {
+  return (
+    <div className="absolute inset-0 bg-ink flex items-center justify-center p-8">
+      <div className="w-full max-w-sm space-y-6">
+        <div className="flex items-center gap-3 rounded-full bg-white/10 px-5 py-3">
+          <span className="material-symbols-outlined text-lagoon">search</span>
+          <div className="h-2.5 w-40 rounded-full bg-white/40" />
+        </div>
+        <svg viewBox="0 0 240 120" className="w-full text-lagoon" fill="none">
+          <path
+            d="M0 110 H240"
+            stroke="currentColor"
+            strokeOpacity="0.3"
+            strokeWidth="2"
+          />
+          <path
+            d="M0 100 C40 96 60 80 90 70 S150 50 180 30 S220 12 240 6"
+            stroke="currentColor"
+            strokeWidth="5"
+            strokeLinecap="round"
+          />
+          <circle cx="240" cy="6" r="6" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function AutomationVisual() {
+  const node = "rounded-xl border-2 border-ink bg-cloud h-14 flex items-center justify-center";
+  return (
+    <div className="absolute inset-0 bg-lagoon flex items-center justify-center p-8">
+      <div className="relative w-full max-w-sm space-y-8">
+        <div className="absolute left-1/2 top-0 bottom-0 border-l-2 border-dashed border-ink/60" />
+        <div className={`relative w-2/5 ${node}`}>
+          <div className="h-2.5 w-16 rounded-full bg-ink/70" />
+        </div>
+        <div className={`relative mx-auto w-2/5 ${node}`}>
+          <span className="material-symbols-outlined text-ink text-3xl">
+            smart_toy
+          </span>
+        </div>
+        <div className={`relative ml-auto w-2/5 ${node}`}>
+          <div className="h-2.5 w-16 rounded-full bg-ink/70" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StrategyVisual() {
+  return (
+    <div className="absolute inset-0 bg-tertiary-fixed flex items-center justify-center">
+      <Logo
+        className="absolute -right-8 -bottom-8 w-64 text-ink/10"
+        paddleClassName="fill-ink/10"
+      />
+      <span className="material-symbols-outlined text-ink !text-[10rem] leading-none">
+        explore
+      </span>
+    </div>
+  );
+}
+
+const VISUALS: Record<VisualKey, () => React.JSX.Element> = {
+  sites: SitesVisual,
+  ads: AdsVisual,
+  seo: SeoVisual,
+  automation: AutomationVisual,
+  strategy: StrategyVisual,
+};
+
 export default function Services() {
+  const [open, setOpen] = useState(0);
+  const [shown, setShown] = useState(0);
+
+  const toggle = (i: number) => {
+    if (open === i) {
+      setOpen(-1);
+    } else {
+      setOpen(i);
+      setShown(i);
+    }
+  };
+
   return (
     <section className="py-section-gap bg-surface-container" id="services">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-headline-lg text-secondary">
+        <div className="flex flex-col lg:flex-row lg:items-end gap-8 mb-16">
+          <h2 className="font-headline font-bold text-headline-lg md:text-headline-xl text-secondary max-w-[13ch]">
             What I build for you
           </h2>
-          <Wave className="h-4 w-28 text-lagoon mx-auto mt-4" />
+          <div
+            aria-hidden
+            className="hidden lg:flex flex-1 items-center pb-6"
+          >
+            <span className="size-2.5 rotate-45 bg-secondary shrink-0" />
+            <span className="h-px flex-1 bg-gradient-to-r from-secondary to-secondary/0" />
+          </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-gutter">
-          {SERVICES.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
+
+        <div className="grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-16 items-start">
+          <div
+            aria-hidden
+            className="relative aspect-[4/3] lg:aspect-auto lg:self-stretch lg:min-h-[520px] rounded-2xl overflow-hidden shadow-xl shadow-ink/10"
+          >
+            {SERVICES.map((s, i) => {
+              const Visual = VISUALS[s.visual];
+              return (
+                <div
+                  key={s.visual}
+                  className={`absolute inset-0 transition-opacity duration-500 motion-reduce:transition-none ${
+                    shown === i ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <Visual />
+                </div>
+              );
+            })}
+          </div>
+
+          <div>
+            {SERVICES.map((s, i) => {
+              const isOpen = open === i;
+              return (
+                <div
+                  key={s.title}
+                  className={`border-b transition-colors ${
+                    isOpen ? "border-secondary" : "border-secondary/15"
+                  }`}
+                >
+                  <h3>
+                    <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      aria-controls={`service-panel-${i}`}
+                      id={`service-trigger-${i}`}
+                      onClick={() => toggle(i)}
+                      className="group flex w-full items-center justify-between gap-4 py-6 text-left cursor-pointer focus-visible:outline-2 focus-visible:outline-cobalt focus-visible:outline-offset-2"
+                    >
+                      <span className="font-headline font-semibold text-3xl md:text-4xl text-secondary transition-transform group-hover:translate-x-1 motion-reduce:transition-none">
+                        {s.title}
+                      </span>
+                      <span
+                        aria-hidden
+                        className={`material-symbols-outlined text-4xl shrink-0 transition-all group-hover:text-cobalt motion-reduce:transition-none ${
+                          isOpen ? "rotate-45 text-cobalt" : "text-secondary"
+                        }`}
+                      >
+                        north_east
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id={`service-panel-${i}`}
+                    role="region"
+                    aria-labelledby={`service-trigger-${i}`}
+                    className={`grid transition-[grid-template-rows] duration-300 motion-reduce:transition-none ${
+                      isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="font-body-md text-on-surface-variant pb-6 max-w-prose">
+                        {s.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

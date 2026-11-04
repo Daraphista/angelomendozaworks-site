@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
 // TODO: re-enable once real case studies are added (see src/components/Portfolio.tsx)
 // import Portfolio from "@/components/Portfolio";
 import Philosophy from "@/components/Philosophy";
@@ -21,6 +22,7 @@ export default function Home() {
         {/* <Proposition /> */}
         <WebsiteShowcase />
         <AdsShowcase />
+        <Testimonials />
         <About />
         {/* <Portfolio /> */}
         <Philosophy />

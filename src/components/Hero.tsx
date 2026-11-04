@@ -89,13 +89,13 @@ export default function Hero() {
           <Wave className="h-4 w-32 text-lagoon" />
         </div>
         <div className="relative mt-stack-lg lg:mt-0">
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[3/4] max-w-md mx-auto">
+          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
             <Image
               alt="Angelo paddling a clear kayak over a turquoise lagoon"
               className="w-full h-full object-cover"
               src="/brand/kayak.jpg"
-              width={810}
-              height={1080}
+              width={809}
+              height={692}
               sizes="(min-width: 1024px) 448px, 90vw"
               preload
             />

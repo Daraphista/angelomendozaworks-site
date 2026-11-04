@@ -41,40 +41,37 @@ const SERVICES = [
 type VisualKey = (typeof SERVICES)[number]["visual"];
 
 function SitesVisual() {
-  const shot = "rounded-lg shadow-lg shadow-ink/15 w-full h-auto";
+  const frames = [
+    { src: "/portfolio/site-1.jpg", h: 553, pos: "left-[6%] top-[7%] w-[68%] z-10" },
+    { src: "/portfolio/site-2.jpg", h: 552, pos: "right-[5%] top-[33%] w-[62%] z-20" },
+    { src: "/portfolio/site-3.jpg", h: 552, pos: "left-[10%] bottom-[6%] w-[58%] z-30" },
+  ];
   return (
-    <div className="absolute inset-0 flex bg-cloud">
-      <div className="w-[52%] bg-white p-6 flex flex-col justify-center gap-4">
-        <p className="font-headline font-semibold text-xl text-secondary leading-tight">
-          Custom-built, not templated.
-        </p>
-        <Image
-          src="/portfolio/site-1.jpg"
-          alt=""
-          width={1100}
-          height={553}
-          sizes="(min-width: 1024px) 340px, 60vw"
-          className={shot}
-        />
-      </div>
-      <div className="flex-1 bg-surface-container/70 p-4 flex flex-col justify-center gap-4">
-        <Image
-          src="/portfolio/site-2.jpg"
-          alt=""
-          width={1100}
-          height={552}
-          sizes="(min-width: 1024px) 300px, 40vw"
-          className={shot}
-        />
-        <Image
-          src="/portfolio/site-3.jpg"
-          alt=""
-          width={1100}
-          height={552}
-          sizes="(min-width: 1024px) 300px, 40vw"
-          className={`${shot} translate-x-6`}
-        />
-      </div>
+    <div className="absolute inset-0 bg-lagoon overflow-hidden">
+      <Logo
+        className="absolute -right-10 -top-10 w-72 text-ink/10"
+        paddleClassName="fill-ink/10"
+      />
+      {frames.map((f) => (
+        <div
+          key={f.src}
+          className={`absolute overflow-hidden rounded-xl bg-white shadow-2xl shadow-ink/30 ring-1 ring-ink/10 ${f.pos}`}
+        >
+          <div className="flex h-[7%] min-h-4 items-center gap-1.5 bg-cloud px-3 py-1.5">
+            <span className="size-2 rounded-full bg-coral" />
+            <span className="size-2 rounded-full bg-sand" />
+            <span className="size-2 rounded-full bg-lagoon" />
+          </div>
+          <Image
+            src={f.src}
+            alt=""
+            width={1100}
+            height={f.h}
+            sizes="(min-width: 1024px) 400px, 70vw"
+            className="block w-full h-auto"
+          />
+        </div>
+      ))}
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg">
           <div className="lg:col-span-5">
             <h2 className="font-headline text-headline-lg text-secondary lg:sticky lg:top-32">
-              Your Vision, My Commitment
+              The person behind the paddle
             </h2>
           </div>
           <div className="lg:col-span-7 space-y-stack-md text-on-tertiary-fixed-variant font-body-lg">

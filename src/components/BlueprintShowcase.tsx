@@ -11,7 +11,7 @@ const DEPTH_STYLES = [
 
 export default function BlueprintShowcase({
   cards,
-  kicker = "Made with Our Masterfully Crafted",
+  kicker = "Built from my blueprints",
   intervalMs = 3500,
   variant = "dark",
 }: {
@@ -31,7 +31,8 @@ export default function BlueprintShowcase({
 
   const active = cards[index];
   const kickerColor =
-    variant === "dark" ? "text-white/50" : "text-secondary/50";
+    variant === "dark" ? "text-white/60" : "text-secondary/60";
+  const headingColor = variant === "dark" ? "text-primary" : "text-cobalt";
   const cardBorder =
     variant === "dark" ? "border-white/10" : "border-secondary/10";
 
@@ -39,13 +40,13 @@ export default function BlueprintShowcase({
     <div className="flex flex-col items-center gap-8 text-center">
       <div>
         <p
-          className={`font-label-bold text-label-bold uppercase tracking-widest ${kickerColor}`}
+          className={`font-mono text-[12px] uppercase tracking-widest ${kickerColor}`}
         >
           {kicker}
         </p>
         <h3
           key={index}
-          className="blueprint-fade font-headline text-headline-md text-primary"
+          className={`blueprint-fade font-headline text-headline-md ${headingColor}`}
         >
           {active.heading}
         </h3>
@@ -60,7 +61,7 @@ export default function BlueprintShowcase({
               className={`absolute inset-0 flex flex-col gap-4 rounded-2xl border ${cardBorder} bg-white p-6 text-left text-secondary shadow-2xl transition-all duration-700 ease-in-out ${DEPTH_STYLES[depth]}`}
             >
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary">
+                <span className="material-symbols-outlined text-cobalt">
                   {card.icon}
                 </span>
                 <span className="font-headline text-label-bold font-semibold">

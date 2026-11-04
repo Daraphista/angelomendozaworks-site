@@ -45,7 +45,7 @@ function PortfolioCard({
         />
       </div>
       <div className="p-6 space-y-3">
-        <span className="inline-block px-3 py-1 bg-secondary text-white font-label-sm rounded-full">
+        <span className="inline-block px-3 py-1 bg-secondary text-cloud font-label-sm rounded-full">
           {tag}
         </span>
         <h3 className="font-headline text-xl font-bold text-secondary">
@@ -53,7 +53,7 @@ function PortfolioCard({
         </h3>
         <p className="font-body-md text-on-surface-variant">{description}</p>
         <a
-          className="inline-flex items-center gap-2 text-primary font-label-bold group/link"
+          className="inline-flex items-center gap-2 text-cobalt font-label-bold group/link"
           href="#"
         >
           View Case Study
@@ -71,7 +71,7 @@ export default function Portfolio() {
     <section className="py-section-gap" id="portfolio">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="mb-stack-lg flex flex-col items-start">
-          <span className="text-primary font-label-bold uppercase tracking-[0.2em] mb-2">
+          <span className="text-cobalt font-mono uppercase tracking-[0.2em] mb-2">
             Portfolio / Case Studies
           </span>
           <h2 className="font-headline text-headline-lg text-secondary">

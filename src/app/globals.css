@@ -1,24 +1,33 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #30d5c8;
-  --color-secondary: #1b2b48;
-  --color-background: #fcf9f8;
-  --color-on-background: #1c1b1b;
-  --color-on-primary: #ffffff;
-  --color-on-secondary: #ffffff;
-  --color-surface: #fcf9f8;
-  --color-surface-container: #f0eded;
-  --color-outline-variant: #bacac7;
-  --color-tertiary-fixed: #f0e0d0;
-  --color-on-tertiary-fixed-variant: #4f453a;
-  --color-on-surface-variant: #3c4947;
-  --color-primary-container: #30d5c8;
-  --color-secondary-container: #e0e7f1;
+  /* Lagoon brand palette (see brand-guide.html) */
+  --color-lagoon: #14cfd6;
+  --color-cobalt: #1f6fe0;
+  --color-coral: #ff4b2b;
+  --color-sand: #e3bc8d;
+  --color-cloud: #f6fbfc;
+  --color-ink: #0c2340;
+
+  /* Legacy semantic names, remapped so existing classes follow the kit */
+  --color-primary: #14cfd6;
+  --color-secondary: #0c2340;
+  --color-background: #f6fbfc;
+  --color-on-background: #0c2340;
+  --color-on-primary: #0c2340;
+  --color-on-secondary: #f6fbfc;
+  --color-surface: #f6fbfc;
+  --color-surface-container: #e4f3f6;
+  --color-outline-variant: #cbdfe5;
+  --color-tertiary-fixed: #e3bc8d;
+  --color-on-tertiary-fixed-variant: #0c2340;
+  --color-on-surface-variant: #4a6078;
+  --color-primary-container: #14cfd6;
+  --color-secondary-container: #e4f3f6;
 
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
+  --radius-xl: 1rem;
   --radius-full: 9999px;
 
   --spacing-stack-sm: 8px;
@@ -30,8 +39,9 @@
   --spacing-container-max: 1280px;
   --spacing-section-gap: 120px;
 
-  --font-body: var(--font-inter), Inter, sans-serif;
-  --font-headline: var(--font-montserrat), Montserrat, sans-serif;
+  --font-body: var(--font-inter), Inter, system-ui, sans-serif;
+  --font-headline: var(--font-bricolage), "Avenir Next", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, Menlo, monospace;
 
   --text-body-md: 16px;
   --text-body-md--line-height: 24px;
@@ -66,7 +76,7 @@
 }
 
 .glass {
-  background: rgba(252, 249, 248, 0.85);
+  background: rgba(246, 251, 252, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -87,7 +97,7 @@
   transform: translateX(-50%);
   width: 4px;
   height: 4px;
-  background-color: #30d5c8;
+  background-color: #ff4b2b;
   border-radius: 9999px;
 }
 
@@ -111,4 +121,18 @@
     0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   transform: translateY(-4px);
+}
+
+@keyframes grid-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+@keyframes grid-down {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+.animate-grid-up { animation: grid-up 60s linear infinite; }
+.animate-grid-down { animation: grid-down 60s linear infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .animate-grid-up, .animate-grid-down { animation: none; }
 }

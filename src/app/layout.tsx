@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Montserrat, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   weight: ["600", "700", "800"],
+  subsets: ["latin"],
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  weight: ["400", "500"],
   subsets: ["latin"],
 });
 
@@ -29,7 +35,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${montserrat.variable} ${inter.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${inter.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <head>
         <link
@@ -37,7 +43,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-background text-on-background font-body overflow-x-hidden selection:bg-primary selection:text-white">
+      <body className="min-h-full flex flex-col bg-background text-on-background font-body overflow-x-hidden selection:bg-coral selection:text-ink">
         {children}
       </body>
     </html>

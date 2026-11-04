@@ -12,7 +12,7 @@ export default function AdsShowcase() {
           </div>
           <div className=" space-y-stack-lg">
             <h2 className="font-headline text-headline-lg text-secondary flex items-center gap-4">
-              <span className="material-symbols-outlined text-5xl text-primary">
+              <span className="material-symbols-outlined text-5xl text-cobalt">
                 trending_up
               </span>
               Better Ads
@@ -20,7 +20,7 @@ export default function AdsShowcase() {
             <ul className="space-y-6">
               {AD_POINTS.map((point) => (
                 <li key={point.strong} className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-cobalt">
                     verified
                   </span>
                   <div>
@@ -31,7 +31,7 @@ export default function AdsShowcase() {
               ))}
             </ul>
             <a
-              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-label-bold text-label-bold shadow-lg shadow-primary/20 hover:-translate-y-0.5 transition-transform"
+              className="inline-block bg-coral text-white px-8 py-4 rounded-full font-label-bold text-label-bold shadow-lg shadow-coral/25 hover:-translate-y-0.5 transition-transform"
               href="#contact"
             >
               Start a Campaign

@@ -1,3 +1,5 @@
+import Wave from "@/components/Wave";
+
 const SERVICES = [
   {
     icon: "code",
@@ -33,8 +35,8 @@ const SERVICES = [
 
 function ServiceCard({ icon, title, description }: (typeof SERVICES)[number]) {
   return (
-    <div className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-8 bg-white border border-outline-variant/40 rounded-xl hover:border-primary transition-colors space-y-4">
-      <span className="material-symbols-outlined text-primary text-5xl">
+    <div className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-8 bg-white border border-outline-variant/40 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-lagoon transition-all space-y-4">
+      <span className="material-symbols-outlined text-cobalt text-5xl">
         {icon}
       </span>
       <h3 className="font-headline text-2xl font-bold text-secondary">
@@ -51,9 +53,9 @@ export default function Services() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="text-center mb-16">
           <h2 className="font-headline text-headline-lg text-secondary">
-            Engineered For Performance
+            What I build for you
           </h2>
-          <div className="h-1.5 w-20 bg-primary mx-auto mt-4" />
+          <Wave className="h-4 w-28 text-lagoon mx-auto mt-4" />
         </div>
         <div className="flex flex-wrap justify-center gap-gutter">
           {SERVICES.map((service) => (

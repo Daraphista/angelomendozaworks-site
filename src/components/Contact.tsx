@@ -32,13 +32,13 @@ export default function Contact() {
             <form className="space-y-8">
               <div className="space-y-2">
                 <label
-                  className="font-label-bold text-secondary uppercase tracking-widest text-[11px]"
+                  className="font-mono text-secondary uppercase tracking-widest text-[11px]"
                   htmlFor="name"
                 >
                   Full Name
                 </label>
                 <input
-                  className="w-full border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 outline-none transition-colors"
+                  className="w-full border-b-2 border-outline-variant/30 focus:border-cobalt focus:ring-0 px-0 py-3 outline-none transition-colors"
                   id="name"
                   placeholder="John Doe"
                   type="text"
@@ -46,13 +46,13 @@ export default function Contact() {
               </div>
               <div className="space-y-2">
                 <label
-                  className="font-label-bold text-secondary uppercase tracking-widest text-[11px]"
+                  className="font-mono text-secondary uppercase tracking-widest text-[11px]"
                   htmlFor="email"
                 >
                   Email
                 </label>
                 <input
-                  className="w-full border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 outline-none transition-colors"
+                  className="w-full border-b-2 border-outline-variant/30 focus:border-cobalt focus:ring-0 px-0 py-3 outline-none transition-colors"
                   id="email"
                   placeholder="john@example.com"
                   type="email"
@@ -60,23 +60,23 @@ export default function Contact() {
               </div>
               <div className="space-y-2">
                 <label
-                  className="font-label-bold text-secondary uppercase tracking-widest text-[11px]"
+                  className="font-mono text-secondary uppercase tracking-widest text-[11px]"
                   htmlFor="details"
                 >
                   Project Details
                 </label>
                 <textarea
-                  className="w-full border-b-2 border-outline-variant/30 focus:border-primary focus:ring-0 px-0 py-3 outline-none transition-colors resize-none"
+                  className="w-full border-b-2 border-outline-variant/30 focus:border-cobalt focus:ring-0 px-0 py-3 outline-none transition-colors resize-none"
                   id="details"
                   placeholder="Tell me about your goals..."
                   rows={4}
                 />
               </div>
               <button
-                className="w-full bg-primary text-white py-5 rounded-xl font-headline font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+                className="w-full bg-coral text-white py-5 rounded-full font-headline font-bold text-lg hover:-translate-y-0.5 transition-all shadow-lg shadow-coral/25"
                 type="submit"
               >
-                Send Message
+                Send message
               </button>
             </form>
           </div>

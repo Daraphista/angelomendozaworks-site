@@ -1,77 +1,63 @@
 import Image from "next/image";
-import Logo from "@/components/Logo";
+import VideoTestimonial from "@/components/VideoTestimonial";
 import Wave from "@/components/Wave";
 
-// TODO: placeholder copy. Replace names, quotes and photos with real client
-// testimonials (drop photos in /public/testimonials and set `photo`) before launch.
+// TODO: placeholder copy. Replace names, roles and quotes with real client
+// testimonials before launch. Photos live in /public/testimonials.
 const TESTIMONIALS: {
   name: string;
+  role: string;
   quote: string;
   photo?: string;
-  tall?: boolean;
+  alt: string;
+  position?: string;
 }[] = [
   {
-    name: "Client Name",
+    name: "Dan K.",
+    role: "Owner, roofing company",
     quote:
-      "Placeholder: he didn't just build our site, he became part of our team.",
+      "my phone started ringing with real roof replacement jobs, not tire-kickers. He built it and it just works.",
+    photo: "/testimonials/roofer.png",
+    alt: "Roofer hammering flashing into place on a shingled roof",
+    position: "object-center",
   },
   {
-    name: "Client Name",
+    name: "Marcus T.",
+    role: "Attorney",
     quote:
-      "Placeholder: the end result was creative, strategic, and way beyond expectations.",
-    tall: true,
-  },
-  {
-    name: "Client Name",
-    quote:
-      "Placeholder: from day one, he understood our business better than we did.",
+      "he understood how clients actually find a lawyer and rebuilt our site around it. Consultation requests doubled.",
+    photo: "/testimonials/lawyer-office.png",
+    alt: "Attorney on the phone at his desk",
+    position: "object-center",
   },
 ];
 
-const FIELDS = ["bg-cobalt", "bg-lagoon", "bg-sand"];
-
-function Card({ t, field }: { t: (typeof TESTIMONIALS)[number]; field: string }) {
-  const initial = t.name.charAt(0);
+function Card({ t }: { t: (typeof TESTIMONIALS)[number] }) {
   return (
     <figure className="relative pb-6 md:pb-0">
-      <div
-        className={`relative w-full md:w-[76%] rounded-2xl overflow-hidden ${field} ${
-          t.tall ? "aspect-[4/5]" : "aspect-[4/3]"
-        }`}
-      >
-        {t.photo ? (
-          <Image
-            src={t.photo}
-            alt={t.name}
-            fill
-            sizes="(min-width: 768px) 30vw, 90vw"
-            className="object-cover"
-          />
-        ) : (
-          <>
-            <Logo
-              className="absolute -right-8 -bottom-8 w-56 text-ink/10"
-              paddleClassName="fill-ink/10"
-            />
-            <div className="absolute inset-0 flex items-center justify-center font-headline font-bold text-9xl text-ink">
-              {initial}
-            </div>
-          </>
-        )}
+      <div className="relative w-full md:w-[84%] aspect-[5/4] rounded-2xl overflow-hidden bg-cobalt">
+        <Image
+          src={t.photo!}
+          alt={t.alt}
+          fill
+          sizes="(min-width: 768px) 30vw, 90vw"
+          className={`object-cover ${t.position ?? ""}`}
+        />
       </div>
-      <figcaption className="relative -mt-10 mx-4 md:mx-0 md:mt-0 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-[52%] rounded-xl bg-white p-6">
+      <figcaption className="relative -mt-10 mx-4 md:mx-0 md:mt-0 md:absolute md:right-0 md:bottom-6 md:w-[46%] rounded-xl bg-white p-5">
         <span
           aria-hidden
           className="block font-headline font-bold text-5xl leading-none text-coral"
         >
           &ldquo;
         </span>
-        <blockquote className="mt-1 text-lg leading-7 text-secondary">
+        <blockquote className="mt-1 text-base leading-6 text-secondary">
           {t.quote}
         </blockquote>
         <p className="mt-4 font-headline font-semibold text-secondary">
           {t.name}
         </p>
+        <p className="font-body-md text-on-surface-variant">{t.role}</p>
       </figcaption>
     </figure>
   );
@@ -91,11 +77,15 @@ export default function Testimonials() {
         </div>
         <div className="grid md:grid-cols-2 gap-x-gutter gap-y-12 items-start">
           <div className="space-y-12">
-            <Card t={TESTIMONIALS[0]} field={FIELDS[0]} />
-            <Card t={TESTIMONIALS[2]} field={FIELDS[2]} />
+            <Card t={TESTIMONIALS[0]} />
+            <Card t={TESTIMONIALS[1]} />
           </div>
-          <div className="md:mt-24">
-            <Card t={TESTIMONIALS[1]} field={FIELDS[1]} />
+          <div className="md:mt-12">
+            <VideoTestimonial
+              name="Client Name"
+              role="Placeholder role"
+              quote="Placeholder: working with him felt like having a partner in the business, not a vendor. Watch the full story."
+            />
           </div>
         </div>
         <div className="mt-16 flex md:justify-end">

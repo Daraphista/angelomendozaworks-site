@@ -23,7 +23,7 @@ export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
       "Call To Action",
       "Footer",
     ],
-    previewHeadline: "INJURY LAWYERS WHO FIGHT FOR YOU",
+    previewHeadline: "STOP LOSING CASES TO WEBSITES THAT DON'T CONVERT",
   },
   {
     heading: "Roofing Website Blueprint!",
@@ -40,7 +40,7 @@ export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
       "Call To Action",
       "Footer",
     ],
-    previewHeadline: "ROOFING REPAIRS DONE RIGHT, GUARANTEED",
+    previewHeadline: "FILL YOUR CALENDAR THIS STORM SEASON",
   },
   {
     heading: "Painting Website Blueprint!",
@@ -57,6 +57,6 @@ export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
       "Call To Action",
       "Footer",
     ],
-    previewHeadline: "PAINTING PROS TRUSTED BY YOUR NEIGHBORS",
+    previewHeadline: "BOOK MORE PAINTING JOBS ON AUTOPILOT",
   },
 ];

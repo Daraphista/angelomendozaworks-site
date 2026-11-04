@@ -1,4 +1,5 @@
 import BlueprintShowcase from "@/components/BlueprintShowcase";
+import Image from "next/image";
 import LoopingPreview from "@/components/LoopingPreview";
 import { WEBSITE_BLUEPRINTS } from "@/data/blueprints";
 import { WEBSITE_POINTS } from "@/data/propositionPoints";
@@ -55,12 +56,25 @@ export default function WebsiteShowcase() {
                 className="group block hover:-translate-y-0.5 transition-transform motion-reduce:transition-none"
               >
                 <div className="aspect-[9/16] overflow-hidden rounded-2xl bg-ink ring-1 ring-white/10 shadow-xl shadow-black/30">
-                  <LoopingPreview
-                    {...site.video}
-                    label={`${site.name} website preview`}
-                  />
+                  {site.video ? (
+                    <LoopingPreview
+                      {...site.video}
+                      poster={site.poster}
+                      label={`${site.name} website preview`}
+                    />
+                  ) : (
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={site.poster}
+                        alt={`${site.name} website preview`}
+                        fill
+                        sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw"
+                        className="object-cover object-top"
+                      />
+                    </div>
+                  )}
                 </div>
-                <div className="mt-3 font-label-bold text-label-bold text-white">
+                <div className="mt-3 font-headline font-label-bold text-label-bold text-white">
                   {site.name}
                 </div>
                 <div className="text-label-sm text-white/60">{site.niche}</div>

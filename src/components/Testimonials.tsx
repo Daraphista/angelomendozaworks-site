@@ -69,7 +69,7 @@ export default function Testimonials() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="flex flex-col xl:flex-row xl:items-end gap-8 mb-16">
           <h2 className="font-headline font-bold text-headline-lg md:text-headline-xl text-cloud xl:whitespace-nowrap">
-            Voices of my partners
+            What my clients are saying
           </h2>
           <div className="hidden xl:flex flex-1 items-center pb-4">
             <Wave className="h-4 w-full max-w-32 text-lagoon" />
@@ -82,9 +82,9 @@ export default function Testimonials() {
           </div>
           <div className="md:mt-12">
             <VideoTestimonial
-              name="Client Name"
-              role="Placeholder role"
-              quote="Placeholder: working with him felt like having a partner in the business, not a vendor. Watch the full story."
+              name="Roman Lopez"
+              role="Real Estate Broker"
+              quote="Angelo Mendoza completely blew my expectations away by automating a complex multi-system workflow I thought was impossible, freeing up over an hour and a half of my time every single day. I strongly recommend working with him if you want to reclaim your schedule and focus on high-value, money-making activities"
             />
           </div>
         </div>

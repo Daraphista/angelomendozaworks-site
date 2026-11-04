@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Logo from "@/components/Logo";
+import Image from "next/image";
 
 // YouTube Short (vertical 9:16). If VIDEO_ID is ever empty the play button is inert.
 const VIDEO_ID = "qqyICIHdbnU";
@@ -30,16 +30,20 @@ export default function VideoTestimonial({
           />
         ) : (
           <>
-            <Logo
-              className="absolute -right-10 -bottom-10 w-72 text-ink/10"
-              paddleClassName="fill-ink/10"
+            <Image
+              src="/testimonials/roman-lopez-thumbnail.png"
+              alt={`${name} video thumbnail`}
+              fill
+              sizes="(min-width: 768px) 28vw, 90vw"
+              className="object-cover"
             />
+            <div aria-hidden className="absolute inset-0 bg-ink/25" />
             <button
               type="button"
               disabled={!VIDEO_ID}
               onClick={() => setPlaying(true)}
               aria-label={`Play video testimonial from ${name}`}
-              className="absolute inset-0 flex items-center justify-center md:pr-24 md:pb-24 group cursor-pointer disabled:cursor-default focus-visible:outline-2 focus-visible:outline-offset-[-8px] focus-visible:outline-cloud"
+              className="absolute inset-0 flex items-center justify-center group cursor-pointer disabled:cursor-default focus-visible:outline-2 focus-visible:outline-offset-[-8px] focus-visible:outline-cloud"
             >
               <span className="flex size-24 items-center justify-center rounded-full bg-coral text-white transition-transform group-hover:scale-105 group-active:scale-95 motion-reduce:transition-none">
                 <span className="material-symbols-outlined !text-6xl leading-none">
@@ -57,7 +61,7 @@ export default function VideoTestimonial({
         >
           &ldquo;
         </span>
-        <blockquote className="mt-1 text-base leading-6 text-secondary">
+        <blockquote className="mt-1 text-sm text-secondary">
           {quote}
         </blockquote>
         <p className="mt-4 font-headline font-semibold text-secondary">

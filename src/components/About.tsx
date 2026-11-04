@@ -109,7 +109,7 @@ export default function About() {
             <p>
               When you work with me, you&apos;re not just hiring a freelancer;
               you&apos;re gaining a partner who treats your business growth with
-              the same intensity as my own. Let&apos;s stop guessing and start
+              the same intensity as your own. Let&apos;s stop guessing and start
               building what performs.
             </p>
             <ul className="mt-16 border-l-2 border-lagoon pl-6">
@@ -118,13 +118,13 @@ export default function About() {
                   key={r.title + r.company}
                   className="grid grid-cols-[1fr_auto] items-baseline gap-x-6 gap-y-0.5 border-b border-outline-variant py-2.5 first:pt-0 last:border-b-0 sm:grid-cols-[1.4fr_1fr_auto]"
                 >
-                  <span className="font-headline text-xl font-semibold tracking-tight text-secondary">
+                  <span className="font-headline font-semibold tracking-tight text-secondary">
                     {r.title}
                   </span>
                   <span className="order-3 col-span-2 text-sm italic text-on-surface-variant sm:order-none sm:col-span-1">
                     {r.company}
                   </span>
-                  <span className="whitespace-nowrap text-right font-mono text-sm tracking-tight text-cobalt">
+                  <span className="whitespace-nowrap text-right tracking-tight text-cobalt">
                     {r.from} → {r.to}
                   </span>
                 </li>

@@ -20,7 +20,7 @@ const socials = [
 
 const roles = [
   { title: "Web Developer", company: "Modiphy", from: "2022", to: "2024" },
-  { title: "Web Developer", company: "Freelance", from: "2024", to: "2025" },
+  { title: "Digital Marketing", company: "Freelance", from: "2024", to: "2025" },
   { title: "Web Developer", company: "Eversite", from: "2025", to: "2026" },
   {
     title: "Chief Technology Officer",

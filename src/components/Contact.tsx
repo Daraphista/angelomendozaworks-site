@@ -16,12 +16,6 @@ export default function Contact() {
             <div className="space-y-6 pt-8">
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined p-3 bg-primary rounded-full text-secondary">
-                  mail
-                </span>
-                <span className="text-lg">angelo@luxemarketing.com</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="material-symbols-outlined p-3 bg-primary rounded-full text-secondary">
                   location_on
                 </span>
                 <span className="text-lg">Available Worldwide (Remote)</span>

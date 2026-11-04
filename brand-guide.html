@@ -1,371 +1,479 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Brand Style Guide | Angelo Mendoza Works</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary-fixed-dim": "#d3c4b5",
-                        "on-tertiary-container": "#564c40",
-                        "on-primary": "#ffffff",
-                        "primary-container": "#30d5c8",
-                        "on-secondary": "#ffffff",
-                        "inverse-on-surface": "#f3f0ef",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#a7c8ff",
-                        "outline": "#6b7a78",
-                        "error": "#ba1a1a",
-                        "tertiary": "#685d50",
-                        "primary-fixed-dim": "#3cdccf",
-                        "outline-variant": "#bacac7",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#9fc2fe",
-                        "on-surface-variant": "#3c4947",
-                        "surface-container-highest": "#e5e2e1",
-                        "secondary": "#3a5f94",
-                        "surface-variant": "#e5e2e1",
-                        "on-secondary-fixed-variant": "#1f477b",
-                        "on-secondary-fixed": "#001b3c",
-                        "on-secondary-container": "#294f83",
-                        "surface-bright": "#fcf9f8",
-                        "secondary-fixed": "#d5e3ff",
-                        "surface-container-high": "#eae7e7",
-                        "on-primary-container": "#005852",
-                        "surface-container-low": "#f6f3f2",
-                        "surface-dim": "#dcd9d9",
-                        "surface-container": "#f0eded",
-                        "inverse-primary": "#3cdccf",
-                        "surface": "#fcf9f8",
-                        "on-background": "#1c1b1b",
-                        "on-primary-fixed-variant": "#00504a",
-                        "on-primary-fixed": "#00201d",
-                        "on-tertiary-fixed": "#221a11",
-                        "on-surface": "#1c1b1b",
-                        "surface-tint": "#006a63",
-                        "primary": "#006a63",
-                        "primary-fixed": "#62f9eb",
-                        "tertiary-fixed": "#f0e0d0",
-                        "on-error-container": "#93000a",
-                        "background": "#fcf9f8",
-                        "on-tertiary-fixed-variant": "#4f453a",
-                        "inverse-surface": "#313030",
-                        "tertiary-container": "#ccbdae",
-                        "surface-container-lowest": "#ffffff",
-                        "error-container": "#ffdad6"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-lg": "32px",
-                        "margin-desktop": "64px",
-                        "gutter": "24px",
-                        "stack-sm": "8px",
-                        "section-gap": "120px",
-                        "container-max": "1280px",
-                        "stack-md": "16px",
-                        "margin-mobile": "20px"
-                    },
-                    "fontFamily": {
-                        "label-sm": ["Inter"],
-                        "label-bold": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-xl": ["Montserrat"],
-                        "headline-md": ["Montserrat"],
-                        "headline-lg-mobile": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "body-lg": ["Inter"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-                        "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
-                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "body-lg": ["20px", {"lineHeight": "32px", "fontWeight": "400"}]
-                    }
-                },
-            },
-        }
-    </script>
+<title>Lagoon Brand Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .glass-nav {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        .brand-shadow {
-            box-shadow: 0 20px 20px rgba(0, 51, 102, 0.05);
-        }
-        .type-specimen-line {
-            border-bottom: 1px solid rgba(107, 122, 120, 0.2);
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 glass-nav shadow-[0_20px_20px_rgba(0,51,102,0.05)]">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
-<div class="hidden md:flex items-center gap-8">
-<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Services</a>
-<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Portfolio</a>
-<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">About</a>
-<a class="font-label-bold text-label-bold text-secondary hover:scale-105 hover:text-primary transition-all duration-300" href="#">Contact</a>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-bold text-label-bold hover:scale-105 transition-transform duration-200">Let's Talk</button>
-</div>
-<!-- Mobile Menu Icon -->
-<div class="md:hidden">
-<span class="material-symbols-outlined text-secondary">menu</span>
-</div>
-</div>
-</nav>
-<main class="pt-32 pb-section-gap">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<!-- Section 1: Brand Overview -->
-<header class="mb-section-gap">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-end">
-<div>
-<span class="text-primary font-label-bold text-label-bold tracking-widest uppercase mb-stack-sm block">Identity Guide v1.0</span>
-<h1 class="font-headline-xl text-headline-xl text-secondary mb-stack-md">Angelo Mendoza Works</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                            Four years of digital marketing excellence, delivering enterprise-grade precision and sustainable growth through data-driven creativity.
-                        </p>
-</div>
-<div class="flex flex-col items-start md:items-end">
-<div class="bg-surface-container-low px-6 py-4 rounded-xl border border-outline-variant/30 flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">language</span>
-<span class="font-label-bold text-label-bold text-secondary">angelomendozaworks.com</span>
-</div>
-</div>
-</div>
-</header>
+/* Layout: dark-water presentation board (3x3 panels) on top, then a long-form guideline column. One coral accent per view. */
+:root {
+  --lagoon: #14CFD6;
+  --cobalt: #1F6FE0;
+  --coral: #FF4B2B;
+  --sand: #E3BC8D;
+  --cloud: #F6FBFC;
+  --ink: #0C2340;
 
-<!-- Section 3: Color Palette -->
-<section class="mb-section-gap">
-<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
-<span class="w-8 h-1 bg-primary-container rounded-full"></span>
-                    Azure Horizon Palette
-                </h2>
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-stack-md">
-<!-- Primary Turquoise -->
-<div class="group">
-<div class="h-48 w-full bg-primary-container rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
-<p class="font-label-bold text-label-bold text-secondary">Turquoise</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">#30D5C8</p>
-</div>
-<!-- Secondary Navy -->
-<div class="group">
-<div class="h-48 w-full bg-secondary rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
-<p class="font-label-bold text-label-bold text-secondary">Deep Navy</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">#3A5F94</p>
-</div>
-<!-- Surface Warm Sand -->
-<div class="group">
-<div class="h-48 w-full bg-tertiary-fixed rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
-<p class="font-label-bold text-label-bold text-secondary">Warm Sand</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">#F0E0D0</p>
-</div>
-<!-- Tertiary Deep -->
-<div class="group">
-<div class="h-48 w-full bg-tertiary rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
-<p class="font-label-bold text-label-bold text-secondary">Muted Earth</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">#685D50</p>
-</div>
-<!-- On Surface -->
-<div class="group">
-<div class="h-48 w-full bg-on-surface rounded-xl mb-3 brand-shadow transition-transform group-hover:scale-105"></div>
-<p class="font-label-bold text-label-bold text-secondary">Onyx</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">#1C1B1B</p>
-</div>
-</div>
-</section>
-<!-- Section 4: Typography -->
-<section class="mb-section-gap">
-<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
-<span class="w-8 h-1 bg-primary-container rounded-full"></span>
-                    Typography Hierarchy
-                </h2>
-<div class="bg-surface-container-lowest rounded-xl p-stack-lg brand-shadow border border-outline-variant/10">
-<div class="space-y-stack-lg">
-<div class="type-specimen-line pb-stack-md">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Headline XL / Montserrat Bold</span>
-<h3 class="font-headline-xl text-headline-xl text-secondary">Master Your Growth</h3>
-</div>
-<div class="type-specimen-line pb-stack-md">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Headline MD / Montserrat Semi-Bold</span>
-<h4 class="font-headline-md text-headline-md text-secondary">Enterprise Marketing Strategy</h4>
-</div>
-<div class="type-specimen-line pb-stack-md">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Body Large / Inter Regular</span>
-<p class="font-body-lg text-body-lg text-on-surface-variant">We bridge the gap between creative inspiration and analytical rigor to deliver results that last.</p>
-</div>
-<div>
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-4">Body Medium & Label / Inter</span>
-<div class="flex flex-wrap gap-stack-lg">
-<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Standard body text used for descriptions and long-form content to ensure maximum readability.</p>
-<span class="font-label-bold text-label-bold text-secondary px-4 py-2 bg-secondary-fixed rounded-full">Primary Action Label</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 5: Imagery & Tone -->
-<section class="mb-section-gap">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
-<div>
-<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
-<span class="w-8 h-1 bg-primary-container rounded-full"></span>
-                            Imagery & Tone
-                        </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
-                            Our visual language is inspired by the Mediterranean coast: airy, professional, and optimistic. We prioritize high-resolution photography with natural lighting and minimalist compositions.
-                        </p>
-<ul class="space-y-4">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-label-bold text-label-bold text-secondary">Natural High-Key Lighting</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-label-bold text-label-bold text-secondary">Minimalist Architecture</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-<span class="font-label-bold text-label-bold text-secondary">Coastal Professionalism</span>
-</li>
-</ul>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary-container/10 rounded-2xl -rotate-2"></div>
-<img alt="Hero Reference Image" class="relative z-10 w-full rounded-xl brand-shadow object-cover aspect-[1.06]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZCpX4ApY3TcWT5oR4S_mxOb_QBAvY3fCMDJSQdPvml4KPF-1d_ui6y5STiLGvff1Eurk-5iiVlVLBIUdNLlvd3tS0IatAPFsRGPL-CkPyct2mjyBm9SibXIButHI0xGXTcPqeFf12Ss7HF119JQG12GNUHK9VxFEbHafbuy0qkjV1KKdDNZaI-Ly3e7buRma6T0ICbUN4LTUGsB462FnfJAoQdzoVkI0s9Oaf2ngu5HJRnR0jtQ-S05FAMZd8L5gKdRpP1EMLtbYx"/>
-<div class="absolute bottom-8 left-8 z-20 bg-white/90 backdrop-blur-md p-4 rounded-lg shadow-xl">
-<p class="font-label-bold text-label-bold text-primary">Visual Benchmark</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant">IMG_5537 Reference Style</p>
-</div>
-</div>
-</div>
-</section>
-  <!-- Portfolio Preview (Bento Grid Style) -->
-<section class="py-section-gap" id="portfolio">
-<div class=" mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-stack-md">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Selected Works</h2>
-<p class="font-body-md text-on-surface-variant max-w-lg">Transforming businesses through integrated digital ecosystems and relentless optimization.</p>
-</div>
-<button class="px-6 py-3 border-b-2 border-primary text-primary font-label-bold hover:bg-primary/5 transition-all">View All Projects</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[700px]">
-<div class="md:col-span-8 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
-<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity"></div>
-<div class="absolute top-6 left-6 z-20 flex gap-2">
-<span class="px-4 py-1.5 bg-primary-container text-on-primary-container text-label-sm font-label-bold rounded-full">E-COMMERCE</span>
-</div>
-<div class="absolute bottom-10 left-10 z-20 text-white">
-<h4 class="font-headline-md text-headline-md mb-2">The Coastal Collection</h4>
-<p class="font-body-md opacity-90 max-w-sm">Scaling a Mediterranean lifestyle brand from $0 to $1.2M annual revenue through paid social and SEO.</p>
-</div>
-<div class="w-full h-full" data-alt="A luxurious minimalist workspace overlooking a crystal clear turquoise coastline. High-end modern furniture and sleek digital displays showing growth metrics. The lighting is bright, natural, and emphasizes a premium, Mediterranean digital marketing aesthetic with vibrant blues and warm sand tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeEy97_IT6A7deaec3Yd9tTd5YO4SHnazQKnINfzQm7QZlQWvSx3QuNNRgy3i58PaaYCRkQcLWVmesKKD3Y_B-qIErEgEYc83S2vZfqoa7wcnIrOJANqB11QDWwslSySk73B0YSpTyxRPwm9PNdWdsPbOVdKNV9wbxPxbV4GW2g9tOtPWVhVbNNtraPmU1B772cthXQhUfpxP_3KMCKkaCQ4ZLtwk5DCHM7fdUckCTRy9udLZ4IbTUWB-oXrulxgBiLUhLBsr0mczw')"></div>
-</div>
-<div class="md:col-span-4 flex flex-col gap-gutter">
-<div class="h-1/2 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
-<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60"></div>
-<div class="absolute bottom-6 left-6 z-20 text-white">
-<h4 class="font-body-lg font-bold">TechSaaS AI</h4>
-<span class="text-label-sm text-primary-fixed uppercase tracking-widest">SaaS Growth</span>
-</div>
-<div class="w-full h-full" data-alt="A clean, minimalist 3D abstract visualization of data growth and connectivity. Soft turquoise and deep blue gradients represent high-tech innovation. Bright, professional lighting with plenty of whitespace, reflecting a high-end corporate modern digital marketing brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWTLDgq8M-npTtKVUIjtQgVhwOs2t1-9lBQ28dpxBYwdIyoWZ8Cmqc9NTrnB3K59NkPr0-gIf_nn6L8LOdL4_kIWZbSPEf4nU7D03H7y3Jxz4RPD17v1zB3jqoR_kvrRfnui7UeMucsMXaAsQI_luzFkIr5dLZLqnqYB5Sx7nIDukGV3dK9A4HhY0g2t_Y75h4RgHqDuWFOlLWfSz-ZkmCTN5uFGY4p2wH2Mbfn46znqti2dy3kdofi8K4YHiq5-xgI3SkWIQ6L1fF')"></div>
-</div>
-<div class="h-1/2 group relative rounded-3xl overflow-hidden portfolio-card shadow-lg">
-<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent z-10 opacity-60"></div>
-<div class="absolute bottom-6 left-6 z-20 text-white">
-<h4 class="font-body-lg font-bold">Urban Wellness</h4>
-<span class="text-label-sm text-primary-fixed uppercase tracking-widest">Local SEO</span>
-</div>
-<div class="w-full h-full" data-alt="An aesthetically pleasing, wellness-focused office space with natural materials like warm wood and light stone. A person is looking at a tablet displaying a clean, branded social media feed. The overall mood is peaceful, bright, and organized, consistent with the Mediterranean-inspired digital marketing style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBq8PaED3S294BF25bY1L19w6bRtjEx8gxzEx2EklMl69oSS9hSwA_LuE3HRkUeOZFwTFfEfgUOb6X5AcBiSbdKYws9nzhstO8zl2waxCxqCigcrJVdKz4gXvMYM3tdO4KsDAGjNzU2NFKhvXfniuivKiBC-o4Fxf_P9yOKknQR3-KK-C7PSJThcUwDDO0IaOjxxdr7N1Q6cyCEZLg79L_GNrOxdYIDsXIGwuxYxoaaGzkkJ9vmJZYhsUi5g9q4rSQD_p6z0ReRmmkw')"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 6: Core Values -->
-<section>
-<h2 class="font-headline-md text-headline-md text-secondary mb-stack-lg flex items-center gap-3">
-<span class="w-8 h-1 bg-primary-container rounded-full"></span>
-                    Core Values
-                </h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="bg-surface-container rounded-xl p-8 hover:bg-primary-container group transition-colors duration-300">
-<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-4xl mb-4">trending_up</span>
-<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-primary-container mb-2">Strategic Growth</h3>
-<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-primary-container/80">Scalable digital frameworks designed for long-term market dominance.</p>
-</div>
-<div class="bg-surface-container rounded-xl p-8 hover:bg-secondary group transition-colors duration-300">
-<span class="material-symbols-outlined text-primary group-hover:text-on-secondary text-4xl mb-4">precision_manufacturing</span>
-<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-secondary mb-2">Enterprise Precision</h3>
-<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-secondary/80">Every pixel and every data point curated with professional obsession.</p>
-</div>
-<div class="bg-surface-container rounded-xl p-8 hover:bg-tertiary group transition-colors duration-300">
-<span class="material-symbols-outlined text-primary group-hover:text-on-tertiary text-4xl mb-4">eco</span>
-<h3 class="font-headline-md text-headline-md text-secondary group-hover:text-on-tertiary mb-2">Sustainable Results</h3>
-<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-tertiary/80">Building brand equity that outlasts temporary marketing trends.</p>
-</div>
-</div>
-</section>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-tertiary-fixed py-section-gap">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
-<div class="md:col-span-1">
+  --bg: #F6FBFC;
+  --fg: #0C2340;
+  --muted: #4A6078;
+  --surface: #FFFFFF;
+  --surface-2: #E4F3F6;
+  --line: #CBDFE5;
+  --link: #1F6FE0;
+  --canvas: #0C2340;
+  --canvas-line: #1C3A5E;
+  --logo-ink: #0C2340;
 
-<p class="font-body-md text-body-md text-on-tertiary-fixed-variant">© 2024 Results-driven digital strategy.</p>
+  --f-display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07172B; --fg: #EAF6F8; --muted: #9DB6C8; --surface: #0F2742; --surface-2: #14304F;
+    --line: #234767; --link: #6FA8FF; --canvas: #040F1E; --canvas-line: #14304F; --logo-ink: #EAF6F8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07172B; --fg: #EAF6F8; --muted: #9DB6C8; --surface: #0F2742; --surface-2: #14304F;
+  --line: #234767; --link: #6FA8FF; --canvas: #040F1E; --canvas-line: #14304F; --logo-ink: #EAF6F8;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font: 400 16px/1.6 var(--f-body);
+  padding-block: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.05; letter-spacing: -0.02em; }
+p { margin: 0; }
+.wrap { max-width: 1240px; margin-inline: auto; }
+.mono { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.logo-ink { fill: none; stroke: var(--logo-ink); }
+.logo-paddle { fill: var(--coral); }
+
+/* ---------- Top bar ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; flex-wrap: wrap; }
+.top .id { display: flex; align-items: center; gap: 12px; font-family: var(--f-display); font-weight: 700; font-size: 18px; }
+.top .id svg { width: 40px; height: 32px; }
+.top .meta { color: var(--muted); }
+.intro { padding-block: 24px 40px; display: grid; gap: 20px; max-width: 760px; }
+.intro h1 { font-size: clamp(40px, 7vw, 84px); font-weight: 800; }
+.intro h1 em { font-style: normal; color: var(--coral); }
+.intro p { color: var(--muted); font-size: 18px; max-width: 56ch; }
+
+/* ---------- Board ---------- */
+.canvas { background: var(--canvas); border-radius: 20px; padding: clamp(10px, 1.6vw, 20px); }
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 1.6vw, 20px); }
+.panel { position: relative; border-radius: 12px; overflow: hidden; min-height: 300px; padding: 20px; display: flex; flex-direction: column; min-width: 0; background: var(--cloud); color: var(--ink); }
+.panel .tag { position: absolute; left: 16px; bottom: 12px; opacity: .6; }
+.panel .pg { position: absolute; right: 16px; bottom: 12px; opacity: .6; }
+.p-cover { align-items: center; justify-content: center; gap: 18px; text-align: center; }
+.p-cover svg.mark { width: 55%; max-width: 190px; height: auto; }
+.p-cover .word { font-family: var(--f-display); font-weight: 800; font-size: 28px; letter-spacing: -0.02em; line-height: 1; }
+.p-cover .sub { color: #4A6078; }
+.p-cover .logo-ink { stroke: #0C2340; }
+
+.p-build { background: #0A1D36; color: #EAF6F8; }
+.p-build svg { width: 100%; height: 100%; flex: 1; }
+
+.p-web { background: #DDF3F5; padding: 18px; }
+.browser { margin-top: 6px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(12,35,64,.18); overflow: hidden; flex: 1; display: flex; flex-direction: column; }
+.browser .bar { display: flex; align-items: center; gap: 6px; padding: 8px 10px; background: #EEF5F7; }
+.browser .bar i { width: 8px; height: 8px; border-radius: 50%; background: #C5D6DC; display: block; }
+.browser .url { margin-left: 8px; flex: 1; background: #fff; border-radius: 6px; padding: 2px 8px; font: 500 10px var(--f-mono); color: #4A6078; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.browser .body { padding: 16px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 12px; align-items: end; flex: 1; }
+.browser h3 { font-size: 22px; font-weight: 800; color: var(--ink); }
+.browser .btn { margin-top: 12px; display: inline-block; background: var(--coral); color: var(--ink); font: 600 11px var(--f-body); padding: 7px 12px; border-radius: 999px; }
+.browser .thumb { aspect-ratio: 3 / 4; border-radius: 8px; background: url("public/brand/kayak.jpg") center 42% / cover; }
+
+.p-essence { background: var(--lagoon); justify-content: center; }
+.p-essence h2 { font-size: clamp(34px, 4.4vw, 52px); font-weight: 800; color: var(--ink); }
+.p-essence h2 span { background: var(--coral); padding: 0 .12em; border-radius: 6px; }
+
+.p-color { padding: 0; flex-direction: row; }
+.p-color .sw { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px 10px 34px; min-width: 0; }
+.p-color .sw b { font: 700 13px var(--f-display); }
+.p-color .sw span { font: 500 10px var(--f-mono); opacity: .85; }
+
+.p-type { background: #fff; justify-content: space-between; }
+.p-type .aa { font-family: var(--f-display); font-weight: 800; font-size: 120px; line-height: .85; letter-spacing: -0.04em; }
+.p-type .aa i { font-style: normal; color: var(--coral); }
+.p-type .rows { display: grid; gap: 4px; padding-bottom: 14px; }
+.p-type .rows div:nth-child(1) { font-family: var(--f-display); font-weight: 700; font-size: 18px; }
+.p-type .rows div:nth-child(2) { font-size: 14px; color: #4A6078; }
+.p-type .rows div:nth-child(3) { font: 500 11px var(--f-mono); color: #1F6FE0; text-transform: uppercase; letter-spacing: .08em; }
+
+.p-phys { background: var(--sand); align-items: center; justify-content: center; }
+.p-phys .card { width: 78%; aspect-ratio: 1.75; background: var(--ink); color: var(--cloud); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; transform: rotate(-4deg); box-shadow: 0 14px 28px rgba(12,35,64,.3); }
+.p-phys .card .nm { font: 700 15px var(--f-display); }
+.p-phys .card .rl { font: 400 10px var(--f-mono); color: var(--lagoon); letter-spacing: .06em; }
+.p-phys .card svg { width: 38px; height: 31px; }
+.p-phys .card .logo-ink { stroke: #F6FBFC; }
+.p-phys .sticker { position: absolute; right: 18px; top: 18px; width: 82px; height: 82px; border-radius: 50%; background: var(--lagoon); display: grid; place-items: center; transform: rotate(8deg); box-shadow: 0 6px 14px rgba(12,35,64,.25); border: 3px solid #fff; }
+.p-phys .sticker svg { width: 50px; height: 40px; }
+.p-phys .logo-ink { stroke: #0C2340; }
+
+.p-photo { padding: 0; background: #0A3A66 url("public/brand/kayak.jpg") center 55% / cover; }
+.p-photo::before { content: ""; position: absolute; inset: 0; background: radial-gradient(rgba(12,35,64,.28) 1px, transparent 1.4px) 0 0 / 5px 5px; mix-blend-mode: multiply; }
+.p-photo svg { position: absolute; left: 16px; top: 16px; width: 54px; height: 44px; }
+.p-photo .logo-ink { stroke: #fff; }
+.p-photo .tag, .p-photo .pg { color: #fff; opacity: .9; z-index: 1; }
+
+.p-sys { background: var(--cobalt); color: #fff; gap: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; padding: 6px 11px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.7); color: #fff; }
+.chip.on { background: var(--lagoon); border-color: var(--lagoon); color: var(--ink); }
+.p-sys .btn { align-self: flex-start; background: var(--coral); color: var(--ink); font: 700 14px var(--f-body); padding: 11px 20px; border-radius: 999px; }
+.p-sys .wave { margin-top: auto; margin-bottom: 14px; width: 100%; height: 34px; }
+
+/* ---------- Guidelines ---------- */
+.sec { padding-block: clamp(48px, 8vw, 96px) 0; display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: clamp(24px, 5vw, 64px); }
+.sec > header { align-self: start; position: sticky; top: 20px; }
+.sec h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 800; }
+.sec header .mono { color: var(--muted); display: block; margin-bottom: 10px; }
+.sec .lead { color: var(--muted); margin-top: 12px; max-width: 34ch; font-size: 15px; }
+.stack { display: grid; gap: 28px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: clamp(16px, 3vw, 28px); min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.h3 { font: 700 20px var(--f-display); margin-bottom: 8px; letter-spacing: -.01em; }
+.note { color: var(--muted); font-size: 14px; }
+.tile { border-radius: 12px; display: grid; place-items: center; aspect-ratio: 4 / 3; padding: 16px; min-width: 0; }
+.tile svg { width: 56%; height: auto; max-height: 80%; }
+.tile.cloud { background: #fff; border: 1px solid var(--line); }
+.tile.lagoon { background: var(--lagoon); } .tile.ink { background: var(--ink); } .tile.cobalt { background: var(--cobalt); } .tile.sand { background: var(--sand); }
+.tile .logo-ink { stroke: #0C2340; }
+.tile.ink .logo-ink, .tile.cobalt .logo-ink { stroke: #fff; }
+.tile.mono .logo-paddle { fill: #0C2340; }
+.cap { margin-top: 8px; color: var(--muted); }
+.clear { position: relative; background: var(--surface-2); border-radius: 12px; display: grid; place-items: center; padding: 40px; }
+.clear .box { outline: 1.5px dashed var(--coral); outline-offset: 22px; line-height: 0; }
+.clear svg { width: 150px; height: 120px; }
+.sizes { display: flex; align-items: flex-end; gap: 28px; flex-wrap: wrap; }
+.sizes div { display: grid; gap: 6px; justify-items: start; }
+.dont { position: relative; }
+.dont::after { content: "✕"; position: absolute; top: 8px; right: 10px; font: 700 14px var(--f-body); color: var(--coral); }
+.ratio { display: flex; height: 56px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.ratio i { display: block; }
+.swatches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.swatch { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.swatch .c { height: 84px; }
+.swatch .t { padding: 10px 12px 12px; display: grid; gap: 2px; }
+.swatch b { font: 700 15px var(--f-display); }
+.swatch span { font: 400 11px var(--f-mono); color: var(--muted); }
+.pairs { width: 100%; border-collapse: collapse; font-size: 14px; }
+.pairs th, .pairs td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.pairs th { font: 500 11px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.pairs .s { display: inline-block; padding: 3px 10px; border-radius: 6px; font: 600 12px var(--f-body); }
+.ok, .no { font-weight: 600; }
+.ok::before { content: "✓ "; color: var(--cobalt); }
+.no::before { content: "✕ "; color: var(--coral); }
+.scroller { overflow-x: auto; }
+.scale { display: grid; }
+.scale > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.scale > div:last-child { border: 0; }
+.scale .k { font: 500 11px var(--f-mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.imgs { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
+.imgs figure { margin: 0; min-width: 0; }
+.imgs .ph { border-radius: 12px; background: #0A3A66 url("public/brand/kayak.jpg") center / cover; aspect-ratio: 3 / 4; }
+.imgs .ph.crop { background-position: 50% 8%; background-size: 220%; aspect-ratio: 1; }
+.imgs .col { display: grid; gap: 16px; align-content: start; }
+ul.rules { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+ul.rules li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; }
+ul.rules li::before { content: "→"; color: var(--coral); font-weight: 700; }
+ul.rules.dont li::before { content: "✕"; color: var(--coral); }
+.voice { display: grid; gap: 12px; }
+.voice .say { padding: 14px 16px; border-radius: 12px; background: var(--surface-2); }
+.voice .say.bad { background: transparent; border: 1px dashed var(--line); color: var(--muted); text-decoration: line-through; text-decoration-color: var(--coral); }
+.ui-demo { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.b { font: 600 15px var(--f-body); border: 0; border-radius: 999px; padding: 12px 22px; cursor: pointer; }
+.b:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 3px; }
+.b.pri { background: var(--coral); color: var(--ink); }
+.b.sec2 { background: var(--ink); color: #F6FBFC; }
+:root[data-theme="dark"] .b.sec2, :root:not([data-theme="light"]) .b.sec2 { }
+.b.ghost { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1.5px var(--fg); }
+.wave-div { width: 100%; height: 40px; display: block; }
+footer { padding-block: 72px 48px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: no-preference) { .b { transition: transform .15s ease; } .b:hover { transform: translateY(-2px); } }
+@media (max-width: 1000px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sec { grid-template-columns: minmax(0, 1fr); } .sec > header { position: static; } }
+@media (max-width: 640px) {
+  .board, .grid2, .grid3, .imgs { grid-template-columns: minmax(0, 1fr); }
+  .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .panel { min-height: 280px; }
+  .scale > div { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+</style>
+
+<!-- Logo symbol: A and M letters in ink, one coral paddle crossing both -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 150 120">
+      <g class="logo-ink" stroke-width="13" stroke-linejoin="miter" stroke-miterlimit="10">
+        <path d="M12 104 L38 26 L64 104"/>
+        <path d="M82 104 V26 L107 74 L132 26 V104"/>
+      </g>
+      <g transform="rotate(-18 75 64)" class="logo-paddle">
+        <rect x="2" y="61" width="112" height="6" rx="3"/>
+        <rect x="104" y="54" width="36" height="20" rx="10"/>
+      </g>
+    </symbol>
+    <symbol id="wave" viewBox="0 0 240 24" preserveAspectRatio="none">
+      <path d="M0 12 Q15 0 30 12 T60 12 T90 12 T120 12 T150 12 T180 12 T210 12 T240 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <div class="top">
+    <div class="id"><svg viewBox="0 0 150 120" aria-hidden="true"><use href="#mark"/></svg> Angelo Mendoza Works</div>
+    <div class="mono meta">Brand kit v1 · Lagoon · Nov 2026</div>
+  </div>
+
+  <div class="intro">
+    <h1>Strategy you can <em>see through.</em></h1>
+    <p>A brand built from one photo: a clear kayak on a glassy lagoon, a coral paddle, open sky. Sunny, honest and hands-on. This is the kit and the rules for using it.</p>
+  </div>
+
+  <!-- ================= BOARD ================= -->
+  <div class="canvas">
+    <div class="board">
+
+      <div class="panel p-cover">
+        <svg class="mark" viewBox="0 0 150 120" role="img" aria-label="AM mark"><use href="#mark"/></svg>
+        <div class="word">Angelo Mendoza</div>
+        <div class="sub mono">Works · Digital strategy</div>
+        <span class="tag mono">Logo</span><span class="pg mono">01</span>
+      </div>
+
+      <div class="panel p-build">
+        <svg viewBox="0 0 300 240" role="img" aria-label="Logo construction on a grid">
+          <g stroke="#1C3A5E" stroke-width="1">
+            <path d="M0 40H300M0 80H300M0 120H300M0 160H300M0 200H300"/>
+            <path d="M50 0V240M100 0V240M150 0V240M200 0V240M250 0V240"/>
+          </g>
+          <circle cx="150" cy="120" r="92" fill="none" stroke="#14CFD6" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <g transform="translate(66 76) scale(1.12)">
+            <g fill="none" stroke="#EAF6F8" stroke-width="13" stroke-miterlimit="10"><path d="M12 104 L38 26 L64 104"/><path d="M82 104 V26 L107 74 L132 26 V104"/></g>
+            <g transform="rotate(-18 75 64)" fill="#FF4B2B"><rect x="2" y="61" width="112" height="6" rx="3"/><rect x="104" y="54" width="36" height="20" rx="10"/></g>
+          </g>
+          <path d="M70 164 L230 106" stroke="#14CFD6" stroke-width="1" stroke-dasharray="3 3" transform="translate(0 -6)"/>
+          <path d="M80 196H150" stroke="#14CFD6" stroke-width="1"/>
+          <path d="M120 196 A40 40 0 0 0 114 176" fill="none" stroke="#14CFD6" stroke-width="1"/>
+          <text x="128" y="190" fill="#14CFD6" font-family="JetBrains Mono, monospace" font-size="10">18°</text>
+        </svg>
+        <span class="tag mono">Construction</span><span class="pg mono">02</span>
+      </div>
+
+      <div class="panel p-web">
+        <div class="mono" style="opacity:.6">Digital</div>
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><div class="url">angelomendozaworks.com</div></div>
+          <div class="body">
+            <div><h3>Websites that sell. Ads you can read.</h3><span class="btn">Let’s talk</span></div>
+            <div class="thumb" role="img" aria-label="Angelo in a clear kayak"></div>
+          </div>
+        </div>
+        <span class="pg mono">03</span>
+      </div>
+
+      <div class="panel p-photo" role="img" aria-label="Angelo paddling a clear kayak over a turquoise lagoon">
+        <svg viewBox="0 0 150 120" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="tag mono">Image direction</span><span class="pg mono">04</span>
+      </div>
+
+      <div class="panel p-essence">
+        <h2>Strategy you can <span>see through.</span></h2>
+        <span class="tag mono">Essence</span><span class="pg mono">05</span>
+      </div>
+
+      <div class="panel p-color">
+        <div class="sw" style="background:var(--cloud);color:var(--ink)"><b>Cloud</b><span>#F6FBFC</span></div>
+        <div class="sw" style="background:var(--sand);color:var(--ink)"><b>Sand</b><span>#E3BC8D</span></div>
+        <div class="sw" style="background:var(--lagoon);color:var(--ink)"><b>Lagoon</b><span>#14CFD6</span></div>
+        <div class="sw" style="background:var(--cobalt);color:#fff"><b>Cobalt</b><span>#1F6FE0</span></div>
+        <div class="sw" style="background:var(--coral);color:var(--ink)"><b>Coral</b><span>#FF4B2B</span></div>
+        <div class="sw" style="background:var(--ink);color:var(--cloud)"><b>Ink</b><span>#0C2340</span></div>
+        <span class="tag mono" style="color:#fff;mix-blend-mode:difference">Color</span><span class="pg mono" style="color:#fff;mix-blend-mode:difference">06</span>
+      </div>
+
+      <div class="panel p-type">
+        <div class="aa">Aa<i>.</i></div>
+        <div class="rows">
+          <div>Bricolage Grotesque 800</div>
+          <div>Inter for the long reads, set at 16/26.</div>
+          <div>JetBrains Mono · labels</div>
+        </div>
+        <span class="tag mono">Type</span><span class="pg mono">07</span>
+      </div>
+
+      <div class="panel p-phys">
+        <div class="sticker"><svg viewBox="0 0 150 120" aria-hidden="true"><use href="#mark"/></svg></div>
+        <div class="card">
+          <svg viewBox="0 0 150 120" aria-hidden="true"><use href="#mark"/></svg>
+          <div><div class="nm">Angelo Mendoza</div><div class="rl">Digital strategist · Full-stack dev</div></div>
+        </div>
+        <span class="tag mono">Physical</span><span class="pg mono">08</span>
+      </div>
+
+      <div class="panel p-sys">
+        <div class="chips"><span class="chip on">Websites</span><span class="chip">SEO</span><span class="chip">Ads</span></div>
+        <span class="btn">Book a free call</span>
+        <svg class="wave" style="color:var(--lagoon)" aria-hidden="true"><use href="#wave"/></svg>
+        <span class="tag mono">System</span><span class="pg mono">09</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= GUIDELINES ================= -->
+  <section class="sec" id="logo">
+    <header><span class="mono">01 Logo</span><h2>One paddle, two letters.</h2><p class="lead">The coral shaft cuts across the A and M like a crossbar. It reads as direction and as a clear view through the work.</p></header>
+    <div class="stack">
+      <div class="grid3">
+        <div><div class="tile cloud"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">Primary · on Cloud</div></div>
+        <div><div class="tile lagoon"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">On Lagoon</div></div>
+        <div><div class="tile ink"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">Reversed · on Ink</div></div>
+        <div><div class="tile cobalt"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">On Cobalt</div></div>
+        <div><div class="tile sand"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">On Sand</div></div>
+        <div><div class="tile cloud mono"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div><div class="cap mono">One colour · print, stamps</div></div>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <div class="h3">Clear space</div>
+          <div class="clear"><div class="box"><svg viewBox="0 0 150 120"><use href="#mark"/></svg></div></div>
+          <p class="note" style="margin-top:12px">Keep one paddle-blade width (the height of the blade, about ⅙ of the mark) free on every side.</p>
+        </div>
+        <div class="card">
+          <div class="h3">Minimum size</div>
+          <div class="sizes">
+            <div><svg width="75" height="60" viewBox="0 0 150 120"><use href="#mark"/></svg><span class="mono note">Web · 75px</span></div>
+            <div><svg width="40" height="32" viewBox="0 0 150 120"><use href="#mark"/></svg><span class="mono note">Nav · 40px</span></div>
+            <div><svg width="24" height="19" viewBox="0 0 150 120"><use href="#mark"/></svg><span class="mono note">Min · 24px</span></div>
+          </div>
+          <p class="note" style="margin-top:14px">Below 24px use the favicon version: mark on a Lagoon rounded square with a heavier stroke.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="h3">Don’t</div>
+        <ul class="rules dont">
+          <li>Recolor the paddle anything but Coral (or Ink in one-colour use).</li>
+          <li>Rotate the paddle to another angle, or move it off the letters.</li>
+          <li>Add shadows, outlines or gradients.</li>
+          <li>Place the mark on busy photo areas. Use a calm patch of sky or water, or the reversed version.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="color">
+    <header><span class="mono">02 Color</span><h2>Water, sky, one hot paddle.</h2><p class="lead">Sampled from the kayak photo. Cool colors carry the page. Coral appears once per view.</p></header>
+    <div class="stack">
+      <div class="swatches">
+        <div class="swatch"><div class="c" style="background:var(--lagoon)"></div><div class="t"><b>Lagoon</b><span>#14CFD6 · primary</span></div></div>
+        <div class="swatch"><div class="c" style="background:var(--cobalt)"></div><div class="t"><b>Sky Cobalt</b><span>#1F6FE0 · secondary</span></div></div>
+        <div class="swatch"><div class="c" style="background:var(--coral)"></div><div class="t"><b>Paddle Coral</b><span>#FF4B2B · accent</span></div></div>
+        <div class="swatch"><div class="c" style="background:var(--sand)"></div><div class="t"><b>Khaki Sand</b><span>#E3BC8D · warm support</span></div></div>
+        <div class="swatch"><div class="c" style="background:var(--cloud)"></div><div class="t"><b>Cloud</b><span>#F6FBFC · background</span></div></div>
+        <div class="swatch"><div class="c" style="background:var(--ink)"></div><div class="t"><b>Deep Ink</b><span>#0C2340 · text, logo</span></div></div>
+      </div>
+      <div class="card">
+        <div class="h3">Ratio of a typical screen</div>
+        <div class="ratio" role="img" aria-label="Cloud 55 percent, Lagoon 18, Cobalt 10, Ink 8, Sand 5, Coral 4">
+          <i style="width:55%;background:var(--cloud)"></i><i style="width:18%;background:var(--lagoon)"></i><i style="width:10%;background:var(--cobalt)"></i><i style="width:8%;background:var(--ink)"></i><i style="width:5%;background:var(--sand)"></i><i style="width:4%;background:var(--coral)"></i>
+        </div>
+        <p class="note" style="margin-top:10px">Cloud 55 · Lagoon 18 · Cobalt 10 · Ink 8 · Sand 5 · Coral 4. In dark mode, swap Cloud for a deep Ink-blue ground and keep the rest.</p>
+      </div>
+      <div class="card scroller">
+        <div class="h3">Approved text pairs (WCAG)</div>
+        <table class="pairs">
+          <tr><th>Text</th><th>On</th><th>Ratio</th><th>Use</th></tr>
+          <tr><td><span class="s" style="background:var(--cloud);color:var(--ink);border:1px solid var(--line)">Ink</span></td><td>Cloud</td><td>15.1 : 1</td><td class="ok">Body, headings</td></tr>
+          <tr><td><span class="s" style="background:var(--lagoon);color:var(--ink)">Ink</span></td><td>Lagoon</td><td>8.2 : 1</td><td class="ok">Banners, tags</td></tr>
+          <tr><td><span class="s" style="background:var(--coral);color:var(--ink)">Ink</span></td><td>Coral</td><td>4.7 : 1</td><td class="ok">Buttons (text stays Ink)</td></tr>
+          <tr><td><span class="s" style="background:var(--cobalt);color:#fff">White</span></td><td>Cobalt</td><td>4.8 : 1</td><td class="ok">Dark sections, links on Cloud</td></tr>
+          <tr><td><span class="s" style="background:var(--coral);color:#fff">White</span></td><td>Coral</td><td>3.3 : 1</td><td class="no">Avoid, fails AA for body text</td></tr>
+          <tr><td><span class="s" style="background:var(--cloud);color:var(--lagoon);border:1px solid var(--line)">Lagoon</span></td><td>Cloud</td><td>1.8 : 1</td><td class="no">Never for text, fills only</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="type">
+    <header><span class="mono">03 Type</span><h2>Friendly up top, plain below.</h2><p class="lead">Bricolage Grotesque gives the headlines some personality. Inter keeps long text easy. Mono is for small labels.</p></header>
+    <div class="stack">
+      <div class="card">
+        <div class="scale">
+          <div><span class="k">Display · 64/68 · 800</span><span style="font:800 clamp(36px,6vw,64px)/1.05 var(--f-display);letter-spacing:-.03em">Clear water.</span></div>
+          <div><span class="k">H2 · 40/44 · 800</span><span style="font:800 40px/1.1 var(--f-display);letter-spacing:-.02em">Websites that sell</span></div>
+          <div><span class="k">H3 · 24/30 · 700</span><span style="font:700 24px/1.25 var(--f-display)">Ads you can read</span></div>
+          <div><span class="k">Body · 16/26 · 400</span><span style="max-width:60ch;display:block">I build the site, the search presence and the ad accounts, and show you what every dollar does.</span></div>
+          <div><span class="k">Label · 11 · mono</span><span class="mono">Websites · SEO · Ads</span></div>
+        </div>
+      </div>
+      <p class="note">Headlines tighten tracking to −2%. Body text stays under 65 characters per line. Wire-up when applying to the site: Bricolage Grotesque replaces Montserrat, Inter stays, JetBrains Mono is new.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="imagery">
+    <header><span class="mono">04 Imagery</span><h2>Real moments, high sun.</h2><p class="lead">Photos should feel like someone was actually there.</p></header>
+    <div class="stack">
+      <div class="imgs">
+        <figure><div class="ph" role="img" aria-label="Full kayak photo"></div><figcaption class="cap mono">Full frame · hero, social</figcaption></figure>
+        <div class="col">
+          <figure><div class="ph crop" role="img" aria-label="Tight crop on Angelo"></div><figcaption class="cap mono">Tight crop · about, cards</figcaption></figure>
+          <ul class="rules">
+            <li>Wide angle, close subject, horizon visible.</li>
+            <li>Saturated sky and water, daylight only.</li>
+            <li>Add subtle halftone grain on large placements.</li>
+            <li>One coral object per frame when you can.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card"><div class="h3">Avoid</div><ul class="rules dont"><li>Stock handshakes, laptops on desks, glowing network graphics.</li><li>Palm trees, sunsets and other resort clichés.</li><li>Heavy filters that shift the water away from turquoise.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="sec" id="voice">
+    <header><span class="mono">05 Voice</span><h2>Short, warm, first person.</h2><p class="lead">Talk like a friend who happens to know ads and code.</p></header>
+    <div class="stack">
+      <div class="card voice">
+        <div class="say">I’ll show you where every dollar goes.</div>
+        <div class="say bad">We leverage synergistic, data-driven solutions to maximize ROI.</div>
+        <div class="say">Your site loads in under two seconds. Here’s how.</div>
+        <div class="say bad">Enterprise-grade performance optimization at scale.</div>
+      </div>
+      <div class="grid3">
+        <div class="card"><div class="h3">Say it plainly</div><p class="note">Numbers and verbs over adjectives.</p></div>
+        <div class="card"><div class="h3">Stay human</div><p class="note">“I” and “you”. Contractions are fine.</p></div>
+        <div class="card"><div class="h3">Keep the fun light</div><p class="note">One playful line per page. The work stays serious.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="ui">
+    <header><span class="mono">06 Interface</span><h2>Round, soft, buoyant.</h2><p class="lead">Rules for the site refresh that follows this kit.</p></header>
+    <div class="stack">
+      <div class="card">
+        <div class="h3">Buttons</div>
+        <div class="ui-demo">
+          <button class="b pri" type="button">Let’s talk</button>
+          <button class="b sec2" type="button">See services</button>
+          <button class="b ghost" type="button">Download CV</button>
+        </div>
+        <p class="note" style="margin-top:12px">Pill shape. One Coral button per screen. Coral buttons carry Ink text.</p>
+      </div>
+      <div class="grid2">
+        <div class="card"><div class="h3">Shape</div><ul class="rules"><li>Cards 16px radius, buttons and chips fully round.</li><li>Soft shadow, never a hard border plus shadow.</li><li>Lagoon and Sand for large fills, Cloud for the page.</li></ul></div>
+        <div class="card"><div class="h3">Motion</div><ul class="rules"><li>Gentle lift (−2px) on hover, 150ms.</li><li>Section dividers use the wave line.</li><li>Respect reduced motion.</li></ul></div>
+      </div>
+      <div class="card"><div class="h3">Wave divider</div><svg class="wave-div" style="color:var(--lagoon)" aria-hidden="true"><use href="#wave"/></svg></div>
+    </div>
+  </section>
+
+  <footer><span class="mono">Angelo Mendoza Works · Lagoon brand kit v1</span><span class="mono">Source photo: IMG_5536</span></footer>
 </div>
-<div>
-<h5 class="font-label-bold text-label-bold text-secondary mb-4">Platform</h5>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Case Studies</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Services</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-bold text-label-bold text-secondary mb-4">Connect</h5>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">LinkedIn</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Contact</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-bold text-label-bold text-secondary mb-4">Legal</h5>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:underline decoration-primary underline-offset-4" href="#">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-</footer>
-<script>
-        // Simple Micro-interactions
-        document.querySelectorAll('button, a').forEach(el => {
-            el.addEventListener('mousedown', () => el.classList.add('scale-95'));
-            el.addEventListener('mouseup', () => el.classList.remove('scale-95'));
-            el.addEventListener('mouseleave', () => el.classList.remove('scale-95'));
-        });
-    </script>
-</body></html>

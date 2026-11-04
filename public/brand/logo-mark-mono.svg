@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 120" role="img" aria-label="Angelo Mendoza mark">
+  <g fill="none" stroke="#0C2340" stroke-width="13" stroke-linejoin="miter" stroke-miterlimit="10">
+    <path d="M12 104 L38 26 L64 104"/>
+    <path d="M82 104 V26 L107 74 L132 26 V104"/>
+  </g>
+  <g transform="rotate(-18 75 64)">
+    <rect x="2" y="61" width="112" height="6" rx="3" fill="#0C2340"/>
+    <rect x="104" y="54" width="36" height="20" rx="10" fill="#0C2340"/>
+  </g>
+</svg>

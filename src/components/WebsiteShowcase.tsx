@@ -1,6 +1,8 @@
 import BlueprintShowcase from "@/components/BlueprintShowcase";
+import LoopingPreview from "@/components/LoopingPreview";
 import { WEBSITE_BLUEPRINTS } from "@/data/blueprints";
 import { WEBSITE_POINTS } from "@/data/propositionPoints";
+import { WEBSITE_PORTFOLIO } from "@/data/websitePortfolio";
 
 export default function WebsiteShowcase() {
   return (
@@ -39,6 +41,31 @@ export default function WebsiteShowcase() {
               See the Work
             </a>
             */}
+          </div>
+        </div>
+
+        <div className="mt-section-gap">
+          <div className="mt-stack-lg grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+            {WEBSITE_PORTFOLIO.map((site) => (
+              <a
+                key={site.slug}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block hover:-translate-y-0.5 transition-transform motion-reduce:transition-none"
+              >
+                <div className="aspect-[9/16] overflow-hidden rounded-2xl bg-ink ring-1 ring-white/10 shadow-xl shadow-black/30">
+                  <LoopingPreview
+                    {...site.video}
+                    label={`${site.name} website preview`}
+                  />
+                </div>
+                <div className="mt-3 font-label-bold text-label-bold text-white">
+                  {site.name}
+                </div>
+                <div className="text-label-sm text-white/60">{site.niche}</div>
+              </a>
+            ))}
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 export type BlueprintCard = {
   heading: string;
+  niche: string;
   icon: string;
   cardTitle: string;
   sections: string[];
@@ -9,6 +10,7 @@ export type BlueprintCard = {
 export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
   {
     heading: "Law Website Blueprint!",
+    niche: "Law",
     icon: "gavel",
     cardTitle: "Law Website Design Blueprint",
     sections: [
@@ -25,6 +27,7 @@ export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
   },
   {
     heading: "Roofing Website Blueprint!",
+    niche: "Roofing",
     icon: "roofing",
     cardTitle: "Roofing Website Design Blueprint",
     sections: [
@@ -41,6 +44,7 @@ export const WEBSITE_BLUEPRINTS: BlueprintCard[] = [
   },
   {
     heading: "Painting Website Blueprint!",
+    niche: "Painting",
     icon: "format_paint",
     cardTitle: "Painting Website Design Blueprint",
     sections: [

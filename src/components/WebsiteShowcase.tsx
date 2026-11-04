@@ -7,7 +7,12 @@ export default function WebsiteShowcase() {
     <section className="py-section-gap bg-secondary text-white">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg md:gap-16 items-center">
-          <BlueprintShowcase cards={WEBSITE_BLUEPRINTS} variant="dark" />
+          <BlueprintShowcase
+            cards={WEBSITE_BLUEPRINTS}
+            variant="dark"
+            titleSuffix="Website Blueprint"
+            description="Each website blueprint is built from analyzing at least a hundred websites for that niche and taking all the best parts, turning it into a formula for creating you the ultimate website for your industry."
+          />
           <div className="space-y-stack-lg">
             <h2 className="font-headline text-headline-lg text-primary flex items-center gap-4">
               <span className="material-symbols-outlined text-5xl">web</span>

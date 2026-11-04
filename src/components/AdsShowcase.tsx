@@ -8,7 +8,11 @@ export default function AdsShowcase() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg md:gap-16 items-center">
           <div className="order-2 lg:order-1">
-            <BlueprintShowcase cards={AD_BLUEPRINTS} variant="light" />
+            <BlueprintShowcase
+              cards={AD_BLUEPRINTS}
+              variant="light"
+              titleSuffix="Ad Blueprint"
+            />
           </div>
           <div className=" space-y-stack-lg">
             <h2 className="font-headline text-headline-lg text-secondary flex items-center gap-4">

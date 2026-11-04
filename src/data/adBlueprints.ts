@@ -3,6 +3,7 @@ import type { BlueprintCard } from "@/data/blueprints";
 export const AD_BLUEPRINTS: BlueprintCard[] = [
   {
     heading: "Law Ad Blueprint!",
+    niche: "Law",
     icon: "gavel",
     cardTitle: "Law Ad Campaign Blueprint",
     sections: [
@@ -19,6 +20,7 @@ export const AD_BLUEPRINTS: BlueprintCard[] = [
   },
   {
     heading: "Roofing Ad Blueprint!",
+    niche: "Roofing",
     icon: "roofing",
     cardTitle: "Roofing Ad Campaign Blueprint",
     sections: [
@@ -35,6 +37,7 @@ export const AD_BLUEPRINTS: BlueprintCard[] = [
   },
   {
     heading: "Painting Ad Blueprint!",
+    niche: "Painting",
     icon: "format_paint",
     cardTitle: "Painting Ad Campaign Blueprint",
     sections: [
